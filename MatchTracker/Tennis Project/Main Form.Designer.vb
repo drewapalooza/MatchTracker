@@ -227,7 +227,7 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(305, 229)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 17)
+        Me.Label1.Size = New System.Drawing.Size(93, 23)
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "Points won"
         '
@@ -236,7 +236,7 @@ Partial Class frmMain
         Me.lblP1Stat.AutoSize = True
         Me.lblP1Stat.Location = New System.Drawing.Point(196, 197)
         Me.lblP1Stat.Name = "lblP1Stat"
-        Me.lblP1Stat.Size = New System.Drawing.Size(54, 17)
+        Me.lblP1Stat.Size = New System.Drawing.Size(70, 23)
         Me.lblP1Stat.TabIndex = 18
         Me.lblP1Stat.Text = "Player 1"
         '
@@ -245,7 +245,7 @@ Partial Class frmMain
         Me.lblP2Stat.AutoSize = True
         Me.lblP2Stat.Location = New System.Drawing.Point(430, 197)
         Me.lblP2Stat.Name = "lblP2Stat"
-        Me.lblP2Stat.Size = New System.Drawing.Size(54, 17)
+        Me.lblP2Stat.Size = New System.Drawing.Size(70, 23)
         Me.lblP2Stat.TabIndex = 25
         Me.lblP2Stat.Text = "Player 2"
         '
@@ -254,7 +254,7 @@ Partial Class frmMain
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(313, 256)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 17)
+        Me.Label2.Size = New System.Drawing.Size(72, 23)
         Me.Label2.TabIndex = 23
         Me.Label2.Text = "Winners"
         '
@@ -263,7 +263,7 @@ Partial Class frmMain
         Me.lblP1Stat1.AutoSize = True
         Me.lblP1Stat1.Location = New System.Drawing.Point(216, 229)
         Me.lblP1Stat1.Name = "lblP1Stat1"
-        Me.lblP1Stat1.Size = New System.Drawing.Size(15, 17)
+        Me.lblP1Stat1.Size = New System.Drawing.Size(19, 23)
         Me.lblP1Stat1.TabIndex = 19
         Me.lblP1Stat1.Text = "0"
         '
@@ -272,7 +272,7 @@ Partial Class frmMain
         Me.lblP2Stat1.AutoSize = True
         Me.lblP2Stat1.Location = New System.Drawing.Point(450, 229)
         Me.lblP2Stat1.Name = "lblP2Stat1"
-        Me.lblP2Stat1.Size = New System.Drawing.Size(15, 17)
+        Me.lblP2Stat1.Size = New System.Drawing.Size(19, 23)
         Me.lblP2Stat1.TabIndex = 26
         Me.lblP2Stat1.Text = "0"
         '
@@ -281,7 +281,7 @@ Partial Class frmMain
         Me.lblP1Stat2.AutoSize = True
         Me.lblP1Stat2.Location = New System.Drawing.Point(216, 256)
         Me.lblP1Stat2.Name = "lblP1Stat2"
-        Me.lblP1Stat2.Size = New System.Drawing.Size(15, 17)
+        Me.lblP1Stat2.Size = New System.Drawing.Size(19, 23)
         Me.lblP1Stat2.TabIndex = 20
         Me.lblP1Stat2.Text = "0"
         '
@@ -290,7 +290,7 @@ Partial Class frmMain
         Me.lblP2Stat2.AutoSize = True
         Me.lblP2Stat2.Location = New System.Drawing.Point(450, 256)
         Me.lblP2Stat2.Name = "lblP2Stat2"
-        Me.lblP2Stat2.Size = New System.Drawing.Size(15, 17)
+        Me.lblP2Stat2.Size = New System.Drawing.Size(19, 23)
         Me.lblP2Stat2.TabIndex = 27
         Me.lblP2Stat2.Text = "0"
         '
@@ -299,7 +299,7 @@ Partial Class frmMain
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(314, 283)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 17)
+        Me.Label7.Size = New System.Drawing.Size(54, 23)
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "Errors"
         '
@@ -308,7 +308,7 @@ Partial Class frmMain
         Me.lblP1Stat3.AutoSize = True
         Me.lblP1Stat3.Location = New System.Drawing.Point(216, 283)
         Me.lblP1Stat3.Name = "lblP1Stat3"
-        Me.lblP1Stat3.Size = New System.Drawing.Size(15, 17)
+        Me.lblP1Stat3.Size = New System.Drawing.Size(19, 23)
         Me.lblP1Stat3.TabIndex = 21
         Me.lblP1Stat3.Text = "0"
         '
@@ -317,7 +317,7 @@ Partial Class frmMain
         Me.lblP2Stat3.AutoSize = True
         Me.lblP2Stat3.Location = New System.Drawing.Point(450, 283)
         Me.lblP2Stat3.Name = "lblP2Stat3"
-        Me.lblP2Stat3.Size = New System.Drawing.Size(15, 17)
+        Me.lblP2Stat3.Size = New System.Drawing.Size(19, 23)
         Me.lblP2Stat3.TabIndex = 28
         Me.lblP2Stat3.Text = "0"
         '
@@ -325,15 +325,15 @@ Partial Class frmMain
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("AR DESTINE", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(169, 26)
+        Me.Label8.Location = New System.Drawing.Point(144, 26)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(218, 34)
+        Me.Label8.Size = New System.Drawing.Size(271, 43)
         Me.Label8.TabIndex = 30
         Me.Label8.Text = "MatchTracker"
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(558, 445)
         Me.Controls.Add(Me.Label8)
@@ -371,6 +371,7 @@ Partial Class frmMain
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "MatchTracker"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
