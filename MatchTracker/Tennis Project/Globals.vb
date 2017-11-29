@@ -1,0 +1,68 @@
+﻿Module Globals
+    'Player names
+    Public strPlayer1 As String
+    Public strPlayer2 As String
+
+    'current set
+    Public intCurrentSet As Integer
+
+    'Set 1 variables
+    Public intP1S1Score As Integer
+    Public intP2S1Score As Integer
+
+    'Set 2 variables
+    Public intP1S2Score As Integer
+    Public intP2S2Score As Integer
+
+    'Set 3 variables
+    Public intP1S3Score As Integer
+    Public intP2S3Score As Integer
+
+    'Points tracker
+    Public intP1TotalPoints As Integer
+    Public intP2TotalPoints As Integer
+
+    'track points in game
+    Public intP1Points As Integer
+    Public intP2Points As Integer
+
+    'track who won last game
+    Public intWonLastPoint As Integer
+
+    'track winners
+    Public intP1Winners As Integer
+    Public intP2Winners As Integer
+
+    'track errors
+    Public intP1Errors As Integer
+    Public intP2Errors As Integer
+
+    'track aces
+    Public intP1Aces As Integer
+    Public intP2Aces As Integer
+
+    'track double faults
+    Public intP1Double As Integer
+    Public intP2Double As Integer
+
+    'track first serves
+    Public intP1FirstServe As Integer
+    Public intP2FirstServe As Integer
+
+    'track second serves
+    Public intP1SecondServe As Integer
+    Public intP2SecondServe As Integer
+
+    'track total serves
+    Public intP1Serves As Integer
+    Public intP2Serves As Integer
+
+
+
+    'FUNCTIONS
+
+    'calculate Serve Percentage
+    Public Function ServePerc(ByVal intServes As Integer, ByVal intTotal As Integer) As Double
+        Return intServes / intTotal
+    End Function
+End Module
