@@ -43,3 +43,4 @@ C:\Users\Kelly\Source\Repos\MatchTracker\MatchTracker\Tennis Project\obj\Debug\T
 C:\Users\Kelly\Source\Repos\MatchTracker\MatchTracker\Tennis Project\obj\Debug\Tennis Project.exe
 C:\Users\Kelly\Source\Repos\MatchTracker\MatchTracker\Tennis Project\obj\Debug\Tennis Project.xml
 C:\Users\Kelly\Source\Repos\MatchTracker\MatchTracker\Tennis Project\obj\Debug\Tennis Project.pdb
+C:\Users\Kelly\Source\Repos\MatchTracker\MatchTracker\Tennis Project\obj\Debug\Tennis_Project.Start_Screen.resources

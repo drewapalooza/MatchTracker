@@ -107,6 +107,12 @@
     <Compile Include="Point Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Start Screen.Designer.vb">
+      <DependentUpon>Start Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Start Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Stats Form.Designer.vb">
       <DependentUpon>Stats Form.vb</DependentUpon>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Point Form.resx">
       <DependentUpon>Point Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start Screen.resx">
+      <DependentUpon>Start Screen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stats Form.resx">
       <DependentUpon>Stats Form.vb</DependentUpon>
