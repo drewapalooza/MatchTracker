@@ -38,7 +38,6 @@ Partial Class frmMain
         Me.btnSet = New System.Windows.Forms.Button()
         Me.btnGame = New System.Windows.Forms.Button()
         Me.lblScore = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblP1Stat = New System.Windows.Forms.Label()
         Me.lblP2Stat = New System.Windows.Forms.Label()
@@ -53,6 +52,8 @@ Partial Class frmMain
         Me.Label8 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuStats = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MatchLogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuNewMatch = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -197,15 +198,6 @@ Partial Class frmMain
         Me.lblScore.Size = New System.Drawing.Size(345, 125)
         Me.lblScore.TabIndex = 17
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(436, 325)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 27)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "&View all stats"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -327,16 +319,31 @@ Partial Class frmMain
         '
         'MatchToolStripMenuItem
         '
-        Me.MatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewMatch})
+        Me.MatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuStats, Me.MatchLogToolStripMenuItem, Me.mnuNewMatch})
         Me.MatchToolStripMenuItem.Name = "MatchToolStripMenuItem"
+        Me.MatchToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
         Me.MatchToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
         Me.MatchToolStripMenuItem.Text = "Match"
+        '
+        'mnuStats
+        '
+        Me.mnuStats.Name = "mnuStats"
+        Me.mnuStats.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.mnuStats.Size = New System.Drawing.Size(212, 26)
+        Me.mnuStats.Text = "Stats"
+        '
+        'MatchLogToolStripMenuItem
+        '
+        Me.MatchLogToolStripMenuItem.Name = "MatchLogToolStripMenuItem"
+        Me.MatchLogToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
+        Me.MatchLogToolStripMenuItem.Size = New System.Drawing.Size(212, 26)
+        Me.MatchLogToolStripMenuItem.Text = "Match Log"
         '
         'mnuNewMatch
         '
         Me.mnuNewMatch.Name = "mnuNewMatch"
-        Me.mnuNewMatch.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
-        Me.mnuNewMatch.Size = New System.Drawing.Size(214, 26)
+        Me.mnuNewMatch.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.mnuNewMatch.Size = New System.Drawing.Size(212, 26)
         Me.mnuNewMatch.Text = "New Match"
         '
         'frmMain
@@ -357,7 +364,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblP2Stat)
         Me.Controls.Add(Me.lblP1Stat)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.btnGame)
         Me.Controls.Add(Me.btnSet)
@@ -404,7 +410,6 @@ Partial Class frmMain
     Friend WithEvents btnSet As Button
     Friend WithEvents btnGame As Button
     Friend WithEvents lblScore As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lblP1Stat As Label
     Friend WithEvents lblP2Stat As Label
@@ -420,4 +425,6 @@ Partial Class frmMain
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MatchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents mnuNewMatch As ToolStripMenuItem
+    Friend WithEvents mnuStats As ToolStripMenuItem
+    Friend WithEvents MatchLogToolStripMenuItem As ToolStripMenuItem
 End Class
