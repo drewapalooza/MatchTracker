@@ -2,7 +2,7 @@
 
 Public Class frmMain
 
-    Private Sub btnMatch_Click(sender As Object, e As EventArgs) Handles btnMatch.Click
+    Private Sub btnMatch_Click(sender As Object, e As EventArgs) Handles mnuNewMatch.Click
 
         'clear out previous names
         lblPlayer1.Text = String.Empty
@@ -78,7 +78,7 @@ Public Class frmMain
         frmGame.Show()
     End Sub
 
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+    Private Sub btnExit_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 

@@ -34,12 +34,10 @@ Partial Class frmMain
         Me.lblP2S2 = New System.Windows.Forms.Label()
         Me.lblP1S1 = New System.Windows.Forms.Label()
         Me.lblP2S1 = New System.Windows.Forms.Label()
-        Me.btnMatch = New System.Windows.Forms.Button()
         Me.lblDesc = New System.Windows.Forms.Label()
         Me.btnSet = New System.Windows.Forms.Button()
         Me.btnGame = New System.Windows.Forms.Button()
         Me.lblScore = New System.Windows.Forms.Label()
-        Me.btnExit = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblP1Stat = New System.Windows.Forms.Label()
@@ -53,6 +51,10 @@ Partial Class frmMain
         Me.lblP1Stat3 = New System.Windows.Forms.Label()
         Me.lblP2Stat3 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuNewMatch = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblPlayer1
@@ -161,15 +163,6 @@ Partial Class frmMain
         Me.lblP2S1.TabIndex = 12
         Me.lblP2S1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnMatch
-        '
-        Me.btnMatch.Location = New System.Drawing.Point(22, 272)
-        Me.btnMatch.Name = "btnMatch"
-        Me.btnMatch.Size = New System.Drawing.Size(94, 39)
-        Me.btnMatch.TabIndex = 2
-        Me.btnMatch.Text = "New &Match"
-        Me.btnMatch.UseVisualStyleBackColor = True
-        '
         'lblDesc
         '
         Me.lblDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -180,20 +173,20 @@ Partial Class frmMain
         '
         'btnSet
         '
-        Me.btnSet.Location = New System.Drawing.Point(22, 229)
+        Me.btnSet.Location = New System.Drawing.Point(478, 93)
         Me.btnSet.Name = "btnSet"
-        Me.btnSet.Size = New System.Drawing.Size(94, 39)
+        Me.btnSet.Size = New System.Drawing.Size(68, 58)
         Me.btnSet.TabIndex = 1
         Me.btnSet.Text = "New &Set"
         Me.btnSet.UseVisualStyleBackColor = True
         '
         'btnGame
         '
-        Me.btnGame.Location = New System.Drawing.Point(22, 186)
+        Me.btnGame.Location = New System.Drawing.Point(29, 186)
         Me.btnGame.Name = "btnGame"
-        Me.btnGame.Size = New System.Drawing.Size(94, 39)
+        Me.btnGame.Size = New System.Drawing.Size(100, 125)
         Me.btnGame.TabIndex = 0
-        Me.btnGame.Text = "New &Game"
+        Me.btnGame.Text = "Continue"
         Me.btnGame.UseVisualStyleBackColor = True
         '
         'lblScore
@@ -203,15 +196,6 @@ Partial Class frmMain
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(345, 125)
         Me.lblScore.TabIndex = 17
-        '
-        'btnExit
-        '
-        Me.btnExit.Location = New System.Drawing.Point(457, 402)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(83, 31)
-        Me.btnExit.TabIndex = 4
-        Me.btnExit.Text = "&Quit"
-        Me.btnExit.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -331,8 +315,33 @@ Partial Class frmMain
         Me.Label8.TabIndex = 30
         Me.Label8.Text = "MatchTracker"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatchToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(558, 28)
+        Me.MenuStrip1.TabIndex = 31
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'MatchToolStripMenuItem
+        '
+        Me.MatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuNewMatch})
+        Me.MatchToolStripMenuItem.Name = "MatchToolStripMenuItem"
+        Me.MatchToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
+        Me.MatchToolStripMenuItem.Text = "Match"
+        '
+        'mnuNewMatch
+        '
+        Me.mnuNewMatch.Name = "mnuNewMatch"
+        Me.mnuNewMatch.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
+        Me.mnuNewMatch.Size = New System.Drawing.Size(214, 26)
+        Me.mnuNewMatch.Text = "New Match"
+        '
         'frmMain
         '
+        Me.AcceptButton = Me.btnGame
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(558, 445)
@@ -349,12 +358,10 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblP1Stat)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.btnGame)
         Me.Controls.Add(Me.btnSet)
         Me.Controls.Add(Me.lblDesc)
-        Me.Controls.Add(Me.btnMatch)
         Me.Controls.Add(Me.lblP2S1)
         Me.Controls.Add(Me.lblP1S1)
         Me.Controls.Add(Me.lblP2S2)
@@ -367,11 +374,15 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblPlayer2)
         Me.Controls.Add(Me.lblPlayer1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MatchTracker"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -389,12 +400,10 @@ Partial Class frmMain
     Friend WithEvents lblP2S2 As Label
     Friend WithEvents lblP1S1 As Label
     Friend WithEvents lblP2S1 As Label
-    Friend WithEvents btnMatch As Button
     Friend WithEvents lblDesc As Label
     Friend WithEvents btnSet As Button
     Friend WithEvents btnGame As Button
     Friend WithEvents lblScore As Label
-    Friend WithEvents btnExit As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lblP1Stat As Label
@@ -408,4 +417,7 @@ Partial Class frmMain
     Friend WithEvents lblP1Stat3 As Label
     Friend WithEvents lblP2Stat3 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents MatchToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuNewMatch As ToolStripMenuItem
 End Class
