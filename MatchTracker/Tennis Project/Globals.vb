@@ -3,6 +3,14 @@
     Public strPlayer1 As String
     Public strPlayer2 As String
 
+    'maximum values
+    Public intMaxSet As Integer
+
+    Public boolMaxGame As Boolean
+    Public intMaxGame As Integer
+
+    Public boolAdScore As Boolean
+
     'current set
     Public intCurrentSet As Integer
 

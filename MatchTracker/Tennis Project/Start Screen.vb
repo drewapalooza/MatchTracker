@@ -74,8 +74,15 @@
         intP1Serves = 0
         intP2Serves = 0
 
+        'match options
+        MessageBox.Show(cbSetCount.SelectedValue)
+
         frmMain.Show()
 
+
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 End Class

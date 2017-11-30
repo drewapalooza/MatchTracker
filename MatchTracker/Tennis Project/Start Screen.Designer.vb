@@ -28,14 +28,14 @@ Partial Class Start_Screen
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.chkAdScore = New System.Windows.Forms.CheckBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnQuickStart = New System.Windows.Forms.Button()
         Me.txtPlayer2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.cbSetCount = New System.Windows.Forms.ComboBox()
+        Me.cbGameCount = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -67,12 +67,12 @@ Partial Class Start_Screen
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbGameCount)
+        Me.GroupBox1.Controls.Add(Me.cbSetCount)
         Me.GroupBox1.Controls.Add(Me.btnStart)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.chkAdScore)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(59, 196)
         Me.GroupBox1.Name = "GroupBox1"
@@ -99,24 +99,15 @@ Partial Class Start_Screen
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Scoring:"
         '
-        'CheckBox1
+        'chkAdScore
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(295, 48)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(83, 27)
-        Me.CheckBox1.TabIndex = 5
-        Me.CheckBox1.Text = "No AD"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        Me.ComboBox2.Location = New System.Drawing.Point(143, 72)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(60, 31)
-        Me.ComboBox2.TabIndex = 3
+        Me.chkAdScore.AutoSize = True
+        Me.chkAdScore.Location = New System.Drawing.Point(295, 48)
+        Me.chkAdScore.Name = "chkAdScore"
+        Me.chkAdScore.Size = New System.Drawing.Size(83, 27)
+        Me.chkAdScore.TabIndex = 5
+        Me.chkAdScore.Text = "No AD"
+        Me.chkAdScore.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -126,15 +117,6 @@ Partial Class Start_Screen
         Me.Label4.Size = New System.Drawing.Size(123, 23)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Games per set:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
-        Me.ComboBox1.Location = New System.Drawing.Point(143, 29)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(60, 31)
-        Me.ComboBox1.TabIndex = 1
         '
         'Label3
         '
@@ -170,6 +152,24 @@ Partial Class Start_Screen
         Me.Label2.TabIndex = 38
         Me.Label2.Text = "Player 2"
         '
+        'cbSetCount
+        '
+        Me.cbSetCount.FormattingEnabled = True
+        Me.cbSetCount.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.cbSetCount.Location = New System.Drawing.Point(144, 28)
+        Me.cbSetCount.Name = "cbSetCount"
+        Me.cbSetCount.Size = New System.Drawing.Size(52, 31)
+        Me.cbSetCount.TabIndex = 8
+        '
+        'cbGameCount
+        '
+        Me.cbGameCount.FormattingEnabled = True
+        Me.cbGameCount.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.cbGameCount.Location = New System.Drawing.Point(144, 72)
+        Me.cbGameCount.Name = "cbGameCount"
+        Me.cbGameCount.Size = New System.Drawing.Size(52, 31)
+        Me.cbGameCount.TabIndex = 9
+        '
         'Start_Screen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
@@ -185,6 +185,7 @@ Partial Class Start_Screen
         Me.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Start_Screen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MatchTracker"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -197,14 +198,14 @@ Partial Class Start_Screen
     Friend WithEvents Label1 As Label
     Friend WithEvents txtPlayer1 As TextBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnStart As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents chkAdScore As CheckBox
     Friend WithEvents btnQuickStart As Button
     Friend WithEvents txtPlayer2 As TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents cbGameCount As ComboBox
+    Friend WithEvents cbSetCount As ComboBox
 End Class
