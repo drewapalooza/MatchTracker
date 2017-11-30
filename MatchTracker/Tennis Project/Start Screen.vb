@@ -75,7 +75,17 @@
         intP2Serves = 0
 
         'match options
-        MessageBox.Show(cbSetCount.SelectedValue)
+        If cbSetCount.Text = String.Empty Then
+            intMaxSet = 3
+        End If
+
+        If cbGameCount.Text = String.Empty Then
+            boolMaxGame = False
+        End If
+
+        If chkAdScore.Checked Then
+            boolAdScore = False
+        End If
 
         frmMain.Show()
 
