@@ -75,17 +75,8 @@
         intP2Serves = 0
 
         'match options
-        If cbSetCount.Text = String.Empty Then
-            intMaxSet = 3
-        End If
-
-        If cbGameCount.Text = String.Empty Then
-            boolMaxGame = False
-        End If
-
-        If chkAdScore.Checked Then
-            boolAdScore = False
-        End If
+        Integer.TryParse(lstSetCount.Text, intMaxSet)
+        Integer.TryParse(lstMaxGame.Text, intMaxGame)
 
         frmMain.Show()
 
@@ -94,5 +85,10 @@
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Start_Screen_Load(sender As Object, e As EventArgs) Handles Me.Load
+        lstMaxGame.Text = 6
+        lstSetCount.Text = 3
     End Sub
 End Class

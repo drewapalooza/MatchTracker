@@ -47,7 +47,7 @@ Partial Class frmGame
         Me.lblPlayer1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer1.Location = New System.Drawing.Point(58, 9)
         Me.lblPlayer1.Name = "lblPlayer1"
-        Me.lblPlayer1.Size = New System.Drawing.Size(148, 46)
+        Me.lblPlayer1.Size = New System.Drawing.Size(121, 37)
         Me.lblPlayer1.TabIndex = 15
         Me.lblPlayer1.Text = "Player 1"
         '
@@ -57,7 +57,7 @@ Partial Class frmGame
         Me.lblPlayer2.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer2.Location = New System.Drawing.Point(332, 9)
         Me.lblPlayer2.Name = "lblPlayer2"
-        Me.lblPlayer2.Size = New System.Drawing.Size(148, 46)
+        Me.lblPlayer2.Size = New System.Drawing.Size(121, 37)
         Me.lblPlayer2.TabIndex = 16
         Me.lblPlayer2.Text = "Player 2"
         '
@@ -67,7 +67,7 @@ Partial Class frmGame
         Me.lblP1Score.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblP1Score.Location = New System.Drawing.Point(191, 93)
         Me.lblP1Score.Name = "lblP1Score"
-        Me.lblP1Score.Size = New System.Drawing.Size(40, 46)
+        Me.lblP1Score.Size = New System.Drawing.Size(33, 37)
         Me.lblP1Score.TabIndex = 12
         Me.lblP1Score.Text = "0"
         '
@@ -95,7 +95,7 @@ Partial Class frmGame
         Me.lblP2Score.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblP2Score.Location = New System.Drawing.Point(273, 93)
         Me.lblP2Score.Name = "lblP2Score"
-        Me.lblP2Score.Size = New System.Drawing.Size(40, 46)
+        Me.lblP2Score.Size = New System.Drawing.Size(33, 37)
         Me.lblP2Score.TabIndex = 14
         Me.lblP2Score.Text = "0"
         '
@@ -105,7 +105,7 @@ Partial Class frmGame
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(239, 93)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 46)
+        Me.Label5.Size = New System.Drawing.Size(28, 37)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "-"
         '
@@ -114,7 +114,7 @@ Partial Class frmGame
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Location = New System.Drawing.Point(74, 49)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(78, 27)
+        Me.RadioButton1.Size = New System.Drawing.Size(63, 21)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.Text = "Server"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -124,7 +124,7 @@ Partial Class frmGame
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Location = New System.Drawing.Point(340, 49)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(78, 27)
+        Me.RadioButton2.Size = New System.Drawing.Size(63, 21)
         Me.RadioButton2.TabIndex = 2
         Me.RadioButton2.Text = "Server"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -188,7 +188,7 @@ Partial Class frmGame
         Me.chkPlayer1.AutoSize = True
         Me.chkPlayer1.Location = New System.Drawing.Point(69, 76)
         Me.chkPlayer1.Name = "chkPlayer1"
-        Me.chkPlayer1.Size = New System.Drawing.Size(87, 27)
+        Me.chkPlayer1.Size = New System.Drawing.Size(68, 21)
         Me.chkPlayer1.TabIndex = 1
         Me.chkPlayer1.Text = "Winner"
         Me.chkPlayer1.UseVisualStyleBackColor = True
@@ -198,7 +198,7 @@ Partial Class frmGame
         Me.chkPlayer2.AutoSize = True
         Me.chkPlayer2.Location = New System.Drawing.Point(340, 76)
         Me.chkPlayer2.Name = "chkPlayer2"
-        Me.chkPlayer2.Size = New System.Drawing.Size(87, 27)
+        Me.chkPlayer2.Size = New System.Drawing.Size(68, 21)
         Me.chkPlayer2.TabIndex = 3
         Me.chkPlayer2.Text = "Winner"
         Me.chkPlayer2.UseVisualStyleBackColor = True
@@ -206,7 +206,7 @@ Partial Class frmGame
         'frmGame
         '
         Me.AcceptButton = Me.btnGameSubmit
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(511, 471)
         Me.Controls.Add(Me.chkPlayer2)
@@ -229,7 +229,7 @@ Partial Class frmGame
         Me.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmGame"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "game_Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()

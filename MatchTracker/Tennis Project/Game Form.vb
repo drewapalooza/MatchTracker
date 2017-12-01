@@ -109,11 +109,17 @@
         intP1Serves = intP1Serves + 1
         ' update first serve percentage
         frmStat.lblStatPageP1FirstServePerc.Text = intP1FirstServe & "/" & intP1Serves & " (" & (intP1FirstServe / intP1Serves).ToString("p1") & ")"
+        btnP1FirstServe.BackColor = Color.DarkSlateGray
+        btnP1FirstServe.ForeColor = Color.White
+
     End Sub
 
     Private Sub btnP1SecondServe_Click(sender As Object, e As EventArgs) Handles btnP1SecondServe.Click
         intP1SecondServe = intP1SecondServe + 1
         intP1Serves = intP1Serves + 1
+
+        btnP1SecondServe.BackColor = Color.DarkSlateGray
+        btnP1SecondServe.ForeColor = Color.White
     End Sub
 
     Private Sub btnP2FirstServe_Click(sender As Object, e As EventArgs) Handles btnP2FirstServe.Click
@@ -123,10 +129,17 @@
         intP2Serves = intP2Serves + 1
         ' update first serve percentage
         frmStat.lblStatPageP2FirstServePerc.Text = intP2FirstServe & "/" & intP2Serves & " (" & (intP2FirstServe / intP2Serves).ToString("p1") & ")"
+
+        btnP2FirstServe.BackColor = Color.DarkSlateGray
+        btnP2FirstServe.ForeColor = Color.White
     End Sub
 
     Private Sub btnP2SecondServe_Click(sender As Object, e As EventArgs) Handles btnP2SecondServe.Click
         intP2SecondServe = intP2SecondServe + 1
         intP2Serves = intP2Serves + 1
+
+        btnP2SecondServe.BackColor = Color.DarkSlateGray
+        btnP2SecondServe.ForeColor = Color.White
     End Sub
+
 End Class

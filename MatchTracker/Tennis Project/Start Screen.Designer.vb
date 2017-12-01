@@ -34,8 +34,8 @@ Partial Class Start_Screen
         Me.btnQuickStart = New System.Windows.Forms.Button()
         Me.txtPlayer2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.cbSetCount = New System.Windows.Forms.ComboBox()
-        Me.cbGameCount = New System.Windows.Forms.ComboBox()
+        Me.lstSetCount = New System.Windows.Forms.ListBox()
+        Me.lstMaxGame = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,7 +45,7 @@ Partial Class Start_Screen
         Me.Label8.Font = New System.Drawing.Font("AR DESTINE", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(195, 27)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(271, 43)
+        Me.Label8.Size = New System.Drawing.Size(218, 34)
         Me.Label8.TabIndex = 31
         Me.Label8.Text = "MatchTracker"
         '
@@ -54,7 +54,7 @@ Partial Class Start_Screen
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(55, 111)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(70, 23)
+        Me.Label1.Size = New System.Drawing.Size(58, 19)
         Me.Label1.TabIndex = 32
         Me.Label1.Text = "Player 1"
         '
@@ -62,13 +62,13 @@ Partial Class Start_Screen
         '
         Me.txtPlayer1.Location = New System.Drawing.Point(59, 137)
         Me.txtPlayer1.Name = "txtPlayer1"
-        Me.txtPlayer1.Size = New System.Drawing.Size(176, 30)
+        Me.txtPlayer1.Size = New System.Drawing.Size(176, 26)
         Me.txtPlayer1.TabIndex = 34
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbGameCount)
-        Me.GroupBox1.Controls.Add(Me.cbSetCount)
+        Me.GroupBox1.Controls.Add(Me.lstMaxGame)
+        Me.GroupBox1.Controls.Add(Me.lstSetCount)
         Me.GroupBox1.Controls.Add(Me.btnStart)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.chkAdScore)
@@ -95,7 +95,7 @@ Partial Class Start_Screen
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(218, 50)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 23)
+        Me.Label5.Size = New System.Drawing.Size(57, 19)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Scoring:"
         '
@@ -104,7 +104,7 @@ Partial Class Start_Screen
         Me.chkAdScore.AutoSize = True
         Me.chkAdScore.Location = New System.Drawing.Point(295, 48)
         Me.chkAdScore.Name = "chkAdScore"
-        Me.chkAdScore.Size = New System.Drawing.Size(83, 27)
+        Me.chkAdScore.Size = New System.Drawing.Size(69, 23)
         Me.chkAdScore.TabIndex = 5
         Me.chkAdScore.Text = "No AD"
         Me.chkAdScore.UseVisualStyleBackColor = True
@@ -114,7 +114,7 @@ Partial Class Start_Screen
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(6, 75)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(123, 23)
+        Me.Label4.Size = New System.Drawing.Size(100, 19)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Games per set:"
         '
@@ -123,7 +123,7 @@ Partial Class Start_Screen
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(6, 31)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(131, 23)
+        Me.Label3.Size = New System.Drawing.Size(106, 19)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Number of sets:"
         '
@@ -140,7 +140,7 @@ Partial Class Start_Screen
         '
         Me.txtPlayer2.Location = New System.Drawing.Point(426, 137)
         Me.txtPlayer2.Name = "txtPlayer2"
-        Me.txtPlayer2.Size = New System.Drawing.Size(176, 30)
+        Me.txtPlayer2.Size = New System.Drawing.Size(176, 26)
         Me.txtPlayer2.TabIndex = 39
         '
         'Label2
@@ -148,31 +148,33 @@ Partial Class Start_Screen
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(421, 111)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 23)
+        Me.Label2.Size = New System.Drawing.Size(58, 19)
         Me.Label2.TabIndex = 38
         Me.Label2.Text = "Player 2"
         '
-        'cbSetCount
+        'lstSetCount
         '
-        Me.cbSetCount.FormattingEnabled = True
-        Me.cbSetCount.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.cbSetCount.Location = New System.Drawing.Point(144, 28)
-        Me.cbSetCount.Name = "cbSetCount"
-        Me.cbSetCount.Size = New System.Drawing.Size(52, 31)
-        Me.cbSetCount.TabIndex = 8
+        Me.lstSetCount.FormattingEnabled = True
+        Me.lstSetCount.ItemHeight = 19
+        Me.lstSetCount.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.lstSetCount.Location = New System.Drawing.Point(118, 29)
+        Me.lstSetCount.Name = "lstSetCount"
+        Me.lstSetCount.Size = New System.Drawing.Size(66, 23)
+        Me.lstSetCount.TabIndex = 40
         '
-        'cbGameCount
+        'lstMaxGame
         '
-        Me.cbGameCount.FormattingEnabled = True
-        Me.cbGameCount.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        Me.cbGameCount.Location = New System.Drawing.Point(144, 72)
-        Me.cbGameCount.Name = "cbGameCount"
-        Me.cbGameCount.Size = New System.Drawing.Size(52, 31)
-        Me.cbGameCount.TabIndex = 9
+        Me.lstMaxGame.FormattingEnabled = True
+        Me.lstMaxGame.ItemHeight = 19
+        Me.lstMaxGame.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.lstMaxGame.Location = New System.Drawing.Point(118, 73)
+        Me.lstMaxGame.Name = "lstMaxGame"
+        Me.lstMaxGame.Size = New System.Drawing.Size(66, 23)
+        Me.lstMaxGame.TabIndex = 41
         '
         'Start_Screen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(660, 335)
         Me.Controls.Add(Me.txtPlayer2)
@@ -206,6 +208,6 @@ Partial Class Start_Screen
     Friend WithEvents btnQuickStart As Button
     Friend WithEvents txtPlayer2 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents cbGameCount As ComboBox
-    Friend WithEvents cbSetCount As ComboBox
+    Friend WithEvents lstSetCount As ListBox
+    Friend WithEvents lstMaxGame As ListBox
 End Class
