@@ -23,13 +23,13 @@ Public Class frmMain
 
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
         intCurrentSet = intCurrentSet + 1
-        If lblP1S2.Text = String.Empty Then
+        If lblP1S2.Text = String.Empty AndAlso intMaxSet > 1 Then
             intP1S2Score = 0
             intP2S2Score = 0
 
             lblP1S2.Text = intP1S2Score.ToString()
             lblP2S2.Text = intP2S2Score.ToString()
-        ElseIf lblP1S3.Text = String.Empty Then
+        ElseIf lblP1S3.Text = String.Empty AndAlso intMaxSet > 2 Then
             intP1S3Score = 0
             intP2S3Score = 0
 

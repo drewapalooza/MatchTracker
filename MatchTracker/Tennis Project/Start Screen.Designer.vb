@@ -34,8 +34,8 @@ Partial Class Start_Screen
         Me.btnQuickStart = New System.Windows.Forms.Button()
         Me.txtPlayer2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.lstSetCount = New System.Windows.Forms.ListBox()
-        Me.lstMaxGame = New System.Windows.Forms.ListBox()
+        Me.lstSetCount = New System.Windows.Forms.ComboBox()
+        Me.lstMaxGame = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -155,22 +155,20 @@ Partial Class Start_Screen
         'lstSetCount
         '
         Me.lstSetCount.FormattingEnabled = True
-        Me.lstSetCount.ItemHeight = 19
         Me.lstSetCount.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.lstSetCount.Location = New System.Drawing.Point(118, 29)
+        Me.lstSetCount.Location = New System.Drawing.Point(118, 28)
         Me.lstSetCount.Name = "lstSetCount"
-        Me.lstSetCount.Size = New System.Drawing.Size(66, 23)
-        Me.lstSetCount.TabIndex = 40
+        Me.lstSetCount.Size = New System.Drawing.Size(52, 27)
+        Me.lstSetCount.TabIndex = 42
         '
         'lstMaxGame
         '
         Me.lstMaxGame.FormattingEnabled = True
-        Me.lstMaxGame.ItemHeight = 19
         Me.lstMaxGame.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        Me.lstMaxGame.Location = New System.Drawing.Point(118, 73)
+        Me.lstMaxGame.Location = New System.Drawing.Point(118, 71)
         Me.lstMaxGame.Name = "lstMaxGame"
-        Me.lstMaxGame.Size = New System.Drawing.Size(66, 23)
-        Me.lstMaxGame.TabIndex = 41
+        Me.lstMaxGame.Size = New System.Drawing.Size(52, 27)
+        Me.lstMaxGame.TabIndex = 43
         '
         'Start_Screen
         '
@@ -208,6 +206,6 @@ Partial Class Start_Screen
     Friend WithEvents btnQuickStart As Button
     Friend WithEvents txtPlayer2 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents lstSetCount As ListBox
-    Friend WithEvents lstMaxGame As ListBox
+    Friend WithEvents lstSetCount As ComboBox
+    Friend WithEvents lstMaxGame As ComboBox
 End Class
