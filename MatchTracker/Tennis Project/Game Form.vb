@@ -52,6 +52,13 @@
             intP1SecondServe = intP1SecondServe + 1
             ' add 1 to total number of serves
             intP1Serves = intP1Serves + 1
+        ElseIf rdoP2DoubleFault.Checked Then
+            'accumulate double faults
+            intP2Double += 1
+            'accumulate serves
+            intP2Serves += 2
+            'update serve percentage
+            frmStat.lblStatPageP2FirstServePerc.Text = intP2FirstServe & "/" & intP2Serves & " (" & (intP2FirstServe / intP2Serves).ToString("p1") & ")"
         ElseIf rdoP2FirstServe.Checked Then
             ' add 1 o number of first serves
             intP2FirstServe = intP2FirstServe + 1
@@ -163,6 +170,10 @@
         ElseIf rdoP2SecondServe.Checked Then
             intP2SecondServe = intP2SecondServe + 1
             intP2Serves = intP2Serves + 1
+        ElseIf rdoP1DoubleFault.Checked Then
+            intP1Double += 1
+            intP1Serves += 2
+            frmStat.lblStatPageP1FirstServePerc.Text = intP1FirstServe & "/" & intP1Serves & " (" & (intP1FirstServe / intP1Serves).ToString("p1") & ")"
         End If
     End Sub
 

@@ -17,6 +17,8 @@
                 If radioDouble.Checked = True Then
                     intP2Double = intP2Double + 1
                     intP2Serves += 2
+
+
                 End If
                 frmMain.lblP2Stat3.Text = intP2Errors.ToString()
             End If
