@@ -13,23 +13,34 @@
         intWonLastPoint = 1
         frmPoint.Show()
 
-        If lblP1Score.Text = "40" AndAlso lblP2Score.Text = "40" Then
-            intcurrentPoint1 = 4
-            lblP1Score.Text = points(intcurrentPoint1)
-        ElseIf lblP1Score.Text = "40" AndAlso lblP2Score.Text = "AD" Then
-            intcurrentPoint2 = 3
-            lblP2Score.Text = points(intcurrentPoint2)
-        ElseIf lblP1Score.Text = "40" AndAlso lblP2Score.Text <> "40" Then
-            intcurrentPoint1 = 3
-            lblP1Score.Text = points(intcurrentPoint1)
-            chkPlayer1.Checked = True
-
-        ElseIf lblP1Score.Text = "AD" Xor lblP2Score.Text = "AD" Then
-            chkPlayer1.Checked = True
+        If boolAdScore Then
+            If lblP1Score.Text = "40" AndAlso lblP2Score.Text = "40" Then
+                chkPlayer1.Checked = True
+            Else
+                intcurrentPoint1 = intcurrentPoint1 + 1
+                lblP1Score.Text = points(intcurrentPoint1)
+            End If
         Else
-            intcurrentPoint1 = intcurrentPoint1 + 1
-            lblP1Score.Text = points(intcurrentPoint1)
+            If lblP1Score.Text = "40" AndAlso lblP2Score.Text = "40" Then
+                intcurrentPoint1 = 4
+                lblP1Score.Text = points(intcurrentPoint1)
+            ElseIf lblP1Score.Text = "40" AndAlso lblP2Score.Text = "AD" Then
+                intcurrentPoint2 = 3
+                lblP2Score.Text = points(intcurrentPoint2)
+            ElseIf lblP1Score.Text = "40" AndAlso lblP2Score.Text <> "40" Then
+                intcurrentPoint1 = 3
+                lblP1Score.Text = points(intcurrentPoint1)
+                chkPlayer1.Checked = True
+
+            ElseIf lblP1Score.Text = "AD" Xor lblP2Score.Text = "AD" Then
+                chkPlayer1.Checked = True
+            Else
+                intcurrentPoint1 = intcurrentPoint1 + 1
+                lblP1Score.Text = points(intcurrentPoint1)
+            End If
         End If
+
+
 
 
     End Sub
@@ -84,20 +95,31 @@
         intWonLastPoint = 2
         frmPoint.Show()
 
-        If lblP1Score.Text = "40" AndAlso lblP2Score.Text = "40" Then
-            intcurrentPoint2 = 4
-            lblP2Score.Text = points(intcurrentPoint2)
-        ElseIf lblP1Score.Text = "AD" AndAlso lblP2Score.Text = "40" Then
-            intcurrentPoint1 = 3
-            lblP1Score.Text = points(intcurrentPoint1)
-        ElseIf lblP1Score.Text <> "40" AndAlso lblP2Score.Text = "40" Then
-            chkPlayer2.Checked = True
-        ElseIf lblP1Score.Text = "AD" Xor lblP2Score.Text = "AD" Then
-            chkPlayer2.Checked = True
+        If boolAdScore Then
+            If lblP2Score.Text = "40" AndAlso lblP1Score.Text = "40" Then
+                chkPlayer2.Checked = True
+            Else
+                intcurrentPoint2 = intcurrentPoint2 + 1
+                lblP2Score.Text = points(intcurrentPoint2)
+            End If
         Else
-            intcurrentPoint2 = intcurrentPoint2 + 1
-            lblP2Score.Text = points(intcurrentPoint2)
+            If lblP1Score.Text = "40" AndAlso lblP2Score.Text = "40" Then
+                intcurrentPoint2 = 4
+                lblP2Score.Text = points(intcurrentPoint2)
+            ElseIf lblP1Score.Text = "AD" AndAlso lblP2Score.Text = "40" Then
+                intcurrentPoint1 = 3
+                lblP1Score.Text = points(intcurrentPoint1)
+            ElseIf lblP1Score.Text <> "40" AndAlso lblP2Score.Text = "40" Then
+                chkPlayer2.Checked = True
+            ElseIf lblP1Score.Text = "AD" Xor lblP2Score.Text = "AD" Then
+                chkPlayer2.Checked = True
+            Else
+                intcurrentPoint2 = intcurrentPoint2 + 1
+                lblP2Score.Text = points(intcurrentPoint2)
+            End If
         End If
+
+
 
 
     End Sub

@@ -65,6 +65,15 @@
     Public intP1Serves As Integer
     Public intP2Serves As Integer
 
+    'track which player wins which set
+    Public intSet1Winner As Integer
+    Public intSet2Winner As Integer
+    Public intSet3Winner As Integer
+
+    Public intP1SetsWon As Integer
+    Public intP2SetsWon As Integer
+
+
 
 
     'FUNCTIONS

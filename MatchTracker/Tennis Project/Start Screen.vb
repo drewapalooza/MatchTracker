@@ -78,6 +78,10 @@
         Integer.TryParse(lstSetCount.Text, intMaxSet)
         Integer.TryParse(lstMaxGame.Text, intMaxGame)
 
+        If chkAdScore.Checked Then
+            boolAdScore = True
+        End If
+
         frmMain.Show()
 
 
