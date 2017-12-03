@@ -31,14 +31,16 @@ Partial Class frmGame
         Me.Label5 = New System.Windows.Forms.Label()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.btnP1FirstServe = New System.Windows.Forms.Button()
-        Me.btnP1SecondServe = New System.Windows.Forms.Button()
-        Me.btnP2SecondServe = New System.Windows.Forms.Button()
-        Me.btnP2FirstServe = New System.Windows.Forms.Button()
         Me.btnGameSubmit = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.chkPlayer1 = New System.Windows.Forms.CheckBox()
         Me.chkPlayer2 = New System.Windows.Forms.CheckBox()
+        Me.panServe = New System.Windows.Forms.Panel()
+        Me.rdoP1SecondServe = New System.Windows.Forms.RadioButton()
+        Me.rdoP2FirstServe = New System.Windows.Forms.RadioButton()
+        Me.rdoP2SecondServe = New System.Windows.Forms.RadioButton()
+        Me.rdoP1FirstServe = New System.Windows.Forms.RadioButton()
+        Me.panServe.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblPlayer1
@@ -129,42 +131,6 @@ Partial Class frmGame
         Me.RadioButton2.Text = "Server"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
-        'btnP1FirstServe
-        '
-        Me.btnP1FirstServe.Location = New System.Drawing.Point(34, 326)
-        Me.btnP1FirstServe.Name = "btnP1FirstServe"
-        Me.btnP1FirstServe.Size = New System.Drawing.Size(176, 34)
-        Me.btnP1FirstServe.TabIndex = 6
-        Me.btnP1FirstServe.Text = "First serve"
-        Me.btnP1FirstServe.UseVisualStyleBackColor = True
-        '
-        'btnP1SecondServe
-        '
-        Me.btnP1SecondServe.Location = New System.Drawing.Point(34, 366)
-        Me.btnP1SecondServe.Name = "btnP1SecondServe"
-        Me.btnP1SecondServe.Size = New System.Drawing.Size(176, 34)
-        Me.btnP1SecondServe.TabIndex = 7
-        Me.btnP1SecondServe.Text = "Second serve"
-        Me.btnP1SecondServe.UseVisualStyleBackColor = True
-        '
-        'btnP2SecondServe
-        '
-        Me.btnP2SecondServe.Location = New System.Drawing.Point(285, 366)
-        Me.btnP2SecondServe.Name = "btnP2SecondServe"
-        Me.btnP2SecondServe.Size = New System.Drawing.Size(176, 34)
-        Me.btnP2SecondServe.TabIndex = 9
-        Me.btnP2SecondServe.Text = "Second serve"
-        Me.btnP2SecondServe.UseVisualStyleBackColor = True
-        '
-        'btnP2FirstServe
-        '
-        Me.btnP2FirstServe.Location = New System.Drawing.Point(285, 326)
-        Me.btnP2FirstServe.Name = "btnP2FirstServe"
-        Me.btnP2FirstServe.Size = New System.Drawing.Size(176, 34)
-        Me.btnP2FirstServe.TabIndex = 8
-        Me.btnP2FirstServe.Text = "First serve"
-        Me.btnP2FirstServe.UseVisualStyleBackColor = True
-        '
         'btnGameSubmit
         '
         Me.btnGameSubmit.Location = New System.Drawing.Point(128, 434)
@@ -203,20 +169,72 @@ Partial Class frmGame
         Me.chkPlayer2.Text = "Winner"
         Me.chkPlayer2.UseVisualStyleBackColor = True
         '
+        'panServe
+        '
+        Me.panServe.Controls.Add(Me.rdoP1SecondServe)
+        Me.panServe.Controls.Add(Me.rdoP2FirstServe)
+        Me.panServe.Controls.Add(Me.rdoP2SecondServe)
+        Me.panServe.Controls.Add(Me.rdoP1FirstServe)
+        Me.panServe.Location = New System.Drawing.Point(34, 326)
+        Me.panServe.Name = "panServe"
+        Me.panServe.Size = New System.Drawing.Size(427, 100)
+        Me.panServe.TabIndex = 19
+        '
+        'rdoP1SecondServe
+        '
+        Me.rdoP1SecondServe.AutoSize = True
+        Me.rdoP1SecondServe.Location = New System.Drawing.Point(40, 48)
+        Me.rdoP1SecondServe.Name = "rdoP1SecondServe"
+        Me.rdoP1SecondServe.Size = New System.Drawing.Size(105, 21)
+        Me.rdoP1SecondServe.TabIndex = 20
+        Me.rdoP1SecondServe.TabStop = True
+        Me.rdoP1SecondServe.Text = "Second Serve"
+        Me.rdoP1SecondServe.UseVisualStyleBackColor = True
+        '
+        'rdoP2FirstServe
+        '
+        Me.rdoP2FirstServe.AutoSize = True
+        Me.rdoP2FirstServe.Location = New System.Drawing.Point(288, 12)
+        Me.rdoP2FirstServe.Name = "rdoP2FirstServe"
+        Me.rdoP2FirstServe.Size = New System.Drawing.Size(86, 21)
+        Me.rdoP2FirstServe.TabIndex = 19
+        Me.rdoP2FirstServe.TabStop = True
+        Me.rdoP2FirstServe.Text = "First Serve"
+        Me.rdoP2FirstServe.UseVisualStyleBackColor = True
+        '
+        'rdoP2SecondServe
+        '
+        Me.rdoP2SecondServe.AutoSize = True
+        Me.rdoP2SecondServe.Location = New System.Drawing.Point(288, 48)
+        Me.rdoP2SecondServe.Name = "rdoP2SecondServe"
+        Me.rdoP2SecondServe.Size = New System.Drawing.Size(105, 21)
+        Me.rdoP2SecondServe.TabIndex = 18
+        Me.rdoP2SecondServe.TabStop = True
+        Me.rdoP2SecondServe.Text = "Second Serve"
+        Me.rdoP2SecondServe.UseVisualStyleBackColor = True
+        '
+        'rdoP1FirstServe
+        '
+        Me.rdoP1FirstServe.AutoSize = True
+        Me.rdoP1FirstServe.Location = New System.Drawing.Point(40, 12)
+        Me.rdoP1FirstServe.Name = "rdoP1FirstServe"
+        Me.rdoP1FirstServe.Size = New System.Drawing.Size(86, 21)
+        Me.rdoP1FirstServe.TabIndex = 17
+        Me.rdoP1FirstServe.TabStop = True
+        Me.rdoP1FirstServe.Text = "First Serve"
+        Me.rdoP1FirstServe.UseVisualStyleBackColor = True
+        '
         'frmGame
         '
         Me.AcceptButton = Me.btnGameSubmit
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(511, 471)
+        Me.Controls.Add(Me.panServe)
         Me.Controls.Add(Me.chkPlayer2)
         Me.Controls.Add(Me.chkPlayer1)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnGameSubmit)
-        Me.Controls.Add(Me.btnP2SecondServe)
-        Me.Controls.Add(Me.btnP2FirstServe)
-        Me.Controls.Add(Me.btnP1SecondServe)
-        Me.Controls.Add(Me.btnP1FirstServe)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label5)
@@ -231,6 +249,8 @@ Partial Class frmGame
         Me.Name = "frmGame"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "game_Form"
+        Me.panServe.ResumeLayout(False)
+        Me.panServe.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -245,12 +265,13 @@ Partial Class frmGame
     Friend WithEvents Label5 As Label
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents btnP1FirstServe As Button
-    Friend WithEvents btnP1SecondServe As Button
-    Friend WithEvents btnP2SecondServe As Button
-    Friend WithEvents btnP2FirstServe As Button
     Friend WithEvents btnGameSubmit As Button
     Friend WithEvents btnCancel As Button
     Friend WithEvents chkPlayer1 As CheckBox
     Friend WithEvents chkPlayer2 As CheckBox
+    Friend WithEvents panServe As Panel
+    Friend WithEvents rdoP1SecondServe As RadioButton
+    Friend WithEvents rdoP2FirstServe As RadioButton
+    Friend WithEvents rdoP2SecondServe As RadioButton
+    Friend WithEvents rdoP1FirstServe As RadioButton
 End Class

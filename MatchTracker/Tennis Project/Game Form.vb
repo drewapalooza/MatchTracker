@@ -40,7 +40,29 @@
             End If
         End If
 
-
+        If rdoP1FirstServe.Checked Then
+            ' add 1 to number of first serves
+            intP1FirstServe = intP1FirstServe + 1
+            ' add 1 to total number of serves
+            intP1Serves = intP1Serves + 1
+            ' update first serve percentage
+            frmStat.lblStatPageP1FirstServePerc.Text = intP1FirstServe & "/" & intP1Serves & " (" & (intP1FirstServe / intP1Serves).ToString("p1") & ")"
+        ElseIf rdoP1SecondServe.Checked Then
+            ' add 1 to number of Second serves
+            intP1SecondServe = intP1SecondServe + 1
+            ' add 1 to total number of serves
+            intP1Serves = intP1Serves + 1
+        ElseIf rdoP2FirstServe.Checked Then
+            ' add 1 o number of first serves
+            intP2FirstServe = intP2FirstServe + 1
+            ' add 1 to total number of serves
+            intP2Serves = intP2Serves + 1
+            ' update first serve percentage
+            frmStat.lblStatPageP2FirstServePerc.Text = intP2FirstServe & "/" & intP2Serves & " (" & (intP2FirstServe / intP2Serves).ToString("p1") & ")"
+        ElseIf rdoP2SecondServe.Checked Then
+            intP2SecondServe = intP2SecondServe + 1
+            intP2Serves = intP2Serves + 1
+        End If
 
 
     End Sub
@@ -119,49 +141,29 @@
             End If
         End If
 
-
-
-
-    End Sub
-
-    Private Sub btnP1FirstServe_Click(sender As Object, e As EventArgs) Handles btnP1FirstServe.Click
-        ' add 1 to number of first serves
-        intP1FirstServe = intP1FirstServe + 1
-        ' add 1 to total number of serves
-        intP1Serves = intP1Serves + 1
-        ' update first serve percentage
-        frmStat.lblStatPageP1FirstServePerc.Text = intP1FirstServe & "/" & intP1Serves & " (" & (intP1FirstServe / intP1Serves).ToString("p1") & ")"
-        btnP1FirstServe.BackColor = Color.DarkSlateGray
-        btnP1FirstServe.ForeColor = Color.White
-
-    End Sub
-
-    Private Sub btnP1SecondServe_Click(sender As Object, e As EventArgs) Handles btnP1SecondServe.Click
-        intP1SecondServe = intP1SecondServe + 1
-        intP1Serves = intP1Serves + 1
-
-        btnP1SecondServe.BackColor = Color.DarkSlateGray
-        btnP1SecondServe.ForeColor = Color.White
-    End Sub
-
-    Private Sub btnP2FirstServe_Click(sender As Object, e As EventArgs) Handles btnP2FirstServe.Click
-        ' add 1 o number of first serves
-        intP2FirstServe = intP2FirstServe + 1
-        ' add 1 to total number of serves
-        intP2Serves = intP2Serves + 1
-        ' update first serve percentage
-        frmStat.lblStatPageP2FirstServePerc.Text = intP2FirstServe & "/" & intP2Serves & " (" & (intP2FirstServe / intP2Serves).ToString("p1") & ")"
-
-        btnP2FirstServe.BackColor = Color.DarkSlateGray
-        btnP2FirstServe.ForeColor = Color.White
-    End Sub
-
-    Private Sub btnP2SecondServe_Click(sender As Object, e As EventArgs) Handles btnP2SecondServe.Click
-        intP2SecondServe = intP2SecondServe + 1
-        intP2Serves = intP2Serves + 1
-
-        btnP2SecondServe.BackColor = Color.DarkSlateGray
-        btnP2SecondServe.ForeColor = Color.White
+        If rdoP1FirstServe.Checked Then
+            ' add 1 to number of first serves
+            intP1FirstServe = intP1FirstServe + 1
+            ' add 1 to total number of serves
+            intP1Serves = intP1Serves + 1
+            ' update first serve percentage
+            frmStat.lblStatPageP1FirstServePerc.Text = intP1FirstServe & "/" & intP1Serves & " (" & (intP1FirstServe / intP1Serves).ToString("p1") & ")"
+        ElseIf rdoP1SecondServe.Checked Then
+            ' add 1 to number of Second serves
+            intP1SecondServe = intP1SecondServe + 1
+            ' add 1 to total number of serves
+            intP1Serves = intP1Serves + 1
+        ElseIf rdoP2FirstServe.Checked Then
+            ' add 1 o number of first serves
+            intP2FirstServe = intP2FirstServe + 1
+            ' add 1 to total number of serves
+            intP2Serves = intP2Serves + 1
+            ' update first serve percentage
+            frmStat.lblStatPageP2FirstServePerc.Text = intP2FirstServe & "/" & intP2Serves & " (" & (intP2FirstServe / intP2Serves).ToString("p1") & ")"
+        ElseIf rdoP2SecondServe.Checked Then
+            intP2SecondServe = intP2SecondServe + 1
+            intP2Serves = intP2Serves + 1
+        End If
     End Sub
 
 End Class
