@@ -19,6 +19,12 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles Me.Load
         intCurrentSet = 1
+
+        lblP1S1.BackColor = Color.Silver
+        lblP2S1.BackColor = Color.Silver
+        lblP1S1.ForeColor = Color.RoyalBlue
+        lblP2S1.ForeColor = Color.RoyalBlue
+
     End Sub
 
     Private Sub btnSet_Click(sender As Object, e As EventArgs) Handles btnSet.Click
@@ -35,19 +41,53 @@ Public Class frmMain
 
             lblP1S3.Text = intP1S3Score.ToString()
             lblP2S3.Text = intP2S3Score.ToString()
+        ElseIf lblP1S4.Text = String.Empty AndAlso intMaxSet > 3 Then
+            intP1S4Score = 0
+            intP2S4Score = 0
+
+            lblP1S4.Text = intP1S4Score.ToString()
+            lblP2S4.Text = intP2S4Score.ToString()
+        ElseIf lblP1S5.Text = String.Empty AndAlso intMaxSet > 4 Then
+            intP1S5Score = 0
+            intP2S5Score = 0
+
+            lblP1S5.Text = intP1S5Score.ToString()
+            lblP2S5.Text = intP2S5Score.ToString()
         End If
-    End Sub
 
-    Private Sub lblP2Stat_Click(sender As Object, e As EventArgs) Handles lblP2Stat.Click
-
+        If intCurrentSet = 2 Then
+            lblP2S1.BackColor = Color.DarkSlateGray
+            lblP1S1.BackColor = Color.DarkSlateGray
+            lblP1S2.BackColor = Color.LightGray
+            lblP2S2.BackColor = Color.LightGray
+            lblP1S2.ForeColor = Color.RoyalBlue
+            lblP2S2.ForeColor = Color.RoyalBlue
+        ElseIf intCurrentSet = 3 Then
+            lblP1S2.BackColor = Color.DarkSlateGray
+            lblP2S2.BackColor = Color.DarkSlateGray
+            lblP1S3.BackColor = Color.LightGray
+            lblP2S3.BackColor = Color.LightGray
+            lblP1S3.ForeColor = Color.RoyalBlue
+            lblP2S3.ForeColor = Color.RoyalBlue
+        ElseIf intCurrentSet = 4 Then
+            lblP1S3.BackColor = Color.DarkSlateGray
+            lblP2S3.BackColor = Color.DarkSlateGray
+            lblP1S4.BackColor = Color.LightGray
+            lblP2S4.BackColor = Color.LightGray
+            lblP1S4.ForeColor = Color.RoyalBlue
+            lblP2S4.ForeColor = Color.RoyalBlue
+        ElseIf intCurrentSet = 5 Then
+            lblP1S4.BackColor = Color.DarkSlateGray
+            lblP2S4.BackColor = Color.DarkSlateGray
+            lblP1S5.BackColor = Color.LightGray
+            lblP2S5.BackColor = Color.LightGray
+            lblP1S5.ForeColor = Color.RoyalBlue
+            lblP2S5.ForeColor = Color.RoyalBlue
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles mnuStats.Click
         frmStat.Show()
-    End Sub
-
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
     End Sub
 
     Private Sub frmMain_Closed(sender As Object, e As EventArgs) Handles Me.Closing

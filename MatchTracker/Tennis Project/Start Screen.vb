@@ -33,18 +33,26 @@
         'clear out previous scores
         frmMain.lblP1S2.Text = String.Empty
         frmMain.lblP1S3.Text = String.Empty
+        frmMain.lblP1S4.Text = String.Empty
+        frmMain.lblP1S5.Text = String.Empty
 
         frmMain.lblP2S2.Text = String.Empty
         frmMain.lblP2S3.Text = String.Empty
+        frmMain.lblP2S4.Text = String.Empty
+        frmMain.lblP2S5.Text = String.Empty
 
         'reset score tracker
         intP1S1Score = 0
         intP1S2Score = 0
         intP1S3Score = 0
+        intP1S4Score = 0
+        intP1S5Score = 0
 
         intP2S1Score = 0
         intP2S2Score = 0
         intP2S3Score = 0
+        intP2S4Score = 0
+        intP2S5Score = 0
 
         'reset stats trackers
         intP1Winners = 0
@@ -93,6 +101,6 @@
 
     Private Sub Start_Screen_Load(sender As Object, e As EventArgs) Handles Me.Load
         lstMaxGame.Text = 6
-        lstSetCount.Text = 3
+        lstSetCount.Text = 5
     End Sub
 End Class

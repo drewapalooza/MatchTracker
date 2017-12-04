@@ -25,6 +25,10 @@
     'Set 3 variables
     Public intP1S3Score As Integer
     Public intP2S3Score As Integer
+    Public intP1S4Score As Integer
+    Public intP2S4Score As Integer
+    Public intP1S5Score As Integer
+    Public intP2S5Score As Integer
 
     'Points tracker
     Public intP1TotalPoints As Integer

@@ -24,10 +24,10 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.lblPlayer1 = New System.Windows.Forms.Label()
         Me.lblPlayer2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblP1S5 = New System.Windows.Forms.Label()
+        Me.lblP2S5 = New System.Windows.Forms.Label()
+        Me.lblP1S4 = New System.Windows.Forms.Label()
+        Me.lblP2S4 = New System.Windows.Forms.Label()
         Me.lblP1S3 = New System.Windows.Forms.Label()
         Me.lblP2S3 = New System.Windows.Forms.Label()
         Me.lblP1S2 = New System.Windows.Forms.Label()
@@ -78,37 +78,41 @@ Partial Class frmMain
         Me.lblPlayer2.Text = "Player 2"
         Me.lblPlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label3
+        'lblP1S5
         '
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Location = New System.Drawing.Point(443, 93)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(29, 29)
-        Me.Label3.TabIndex = 11
+        Me.lblP1S5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblP1S5.Location = New System.Drawing.Point(443, 93)
+        Me.lblP1S5.Name = "lblP1S5"
+        Me.lblP1S5.Size = New System.Drawing.Size(29, 29)
+        Me.lblP1S5.TabIndex = 11
+        Me.lblP1S5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label4
+        'lblP2S5
         '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Location = New System.Drawing.Point(443, 122)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 29)
-        Me.Label4.TabIndex = 16
+        Me.lblP2S5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblP2S5.Location = New System.Drawing.Point(443, 122)
+        Me.lblP2S5.Name = "lblP2S5"
+        Me.lblP2S5.Size = New System.Drawing.Size(29, 29)
+        Me.lblP2S5.TabIndex = 16
+        Me.lblP2S5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
+        'lblP1S4
         '
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Location = New System.Drawing.Point(415, 93)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 29)
-        Me.Label5.TabIndex = 10
+        Me.lblP1S4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblP1S4.Location = New System.Drawing.Point(415, 93)
+        Me.lblP1S4.Name = "lblP1S4"
+        Me.lblP1S4.Size = New System.Drawing.Size(29, 29)
+        Me.lblP1S4.TabIndex = 10
+        Me.lblP1S4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label6
+        'lblP2S4
         '
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label6.Location = New System.Drawing.Point(415, 122)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 29)
-        Me.Label6.TabIndex = 15
+        Me.lblP2S4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblP2S4.Location = New System.Drawing.Point(415, 122)
+        Me.lblP2S4.Name = "lblP2S4"
+        Me.lblP2S4.Size = New System.Drawing.Size(29, 29)
+        Me.lblP2S4.TabIndex = 15
+        Me.lblP2S4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP1S3
         '
@@ -203,7 +207,7 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(305, 229)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 23)
+        Me.Label1.Size = New System.Drawing.Size(71, 17)
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "Points won"
         '
@@ -212,7 +216,7 @@ Partial Class frmMain
         Me.lblP1Stat.AutoSize = True
         Me.lblP1Stat.Location = New System.Drawing.Point(196, 197)
         Me.lblP1Stat.Name = "lblP1Stat"
-        Me.lblP1Stat.Size = New System.Drawing.Size(70, 23)
+        Me.lblP1Stat.Size = New System.Drawing.Size(54, 17)
         Me.lblP1Stat.TabIndex = 18
         Me.lblP1Stat.Text = "Player 1"
         '
@@ -221,7 +225,7 @@ Partial Class frmMain
         Me.lblP2Stat.AutoSize = True
         Me.lblP2Stat.Location = New System.Drawing.Point(430, 197)
         Me.lblP2Stat.Name = "lblP2Stat"
-        Me.lblP2Stat.Size = New System.Drawing.Size(70, 23)
+        Me.lblP2Stat.Size = New System.Drawing.Size(54, 17)
         Me.lblP2Stat.TabIndex = 25
         Me.lblP2Stat.Text = "Player 2"
         '
@@ -230,7 +234,7 @@ Partial Class frmMain
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(313, 256)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 23)
+        Me.Label2.Size = New System.Drawing.Size(55, 17)
         Me.Label2.TabIndex = 23
         Me.Label2.Text = "Winners"
         '
@@ -239,7 +243,7 @@ Partial Class frmMain
         Me.lblP1Stat1.AutoSize = True
         Me.lblP1Stat1.Location = New System.Drawing.Point(216, 229)
         Me.lblP1Stat1.Name = "lblP1Stat1"
-        Me.lblP1Stat1.Size = New System.Drawing.Size(19, 23)
+        Me.lblP1Stat1.Size = New System.Drawing.Size(15, 17)
         Me.lblP1Stat1.TabIndex = 19
         Me.lblP1Stat1.Text = "0"
         '
@@ -248,7 +252,7 @@ Partial Class frmMain
         Me.lblP2Stat1.AutoSize = True
         Me.lblP2Stat1.Location = New System.Drawing.Point(450, 229)
         Me.lblP2Stat1.Name = "lblP2Stat1"
-        Me.lblP2Stat1.Size = New System.Drawing.Size(19, 23)
+        Me.lblP2Stat1.Size = New System.Drawing.Size(15, 17)
         Me.lblP2Stat1.TabIndex = 26
         Me.lblP2Stat1.Text = "0"
         '
@@ -257,7 +261,7 @@ Partial Class frmMain
         Me.lblP1Stat2.AutoSize = True
         Me.lblP1Stat2.Location = New System.Drawing.Point(216, 256)
         Me.lblP1Stat2.Name = "lblP1Stat2"
-        Me.lblP1Stat2.Size = New System.Drawing.Size(19, 23)
+        Me.lblP1Stat2.Size = New System.Drawing.Size(15, 17)
         Me.lblP1Stat2.TabIndex = 20
         Me.lblP1Stat2.Text = "0"
         '
@@ -266,7 +270,7 @@ Partial Class frmMain
         Me.lblP2Stat2.AutoSize = True
         Me.lblP2Stat2.Location = New System.Drawing.Point(450, 256)
         Me.lblP2Stat2.Name = "lblP2Stat2"
-        Me.lblP2Stat2.Size = New System.Drawing.Size(19, 23)
+        Me.lblP2Stat2.Size = New System.Drawing.Size(15, 17)
         Me.lblP2Stat2.TabIndex = 27
         Me.lblP2Stat2.Text = "0"
         '
@@ -275,7 +279,7 @@ Partial Class frmMain
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(314, 283)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 23)
+        Me.Label7.Size = New System.Drawing.Size(44, 17)
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "Errors"
         '
@@ -284,7 +288,7 @@ Partial Class frmMain
         Me.lblP1Stat3.AutoSize = True
         Me.lblP1Stat3.Location = New System.Drawing.Point(216, 283)
         Me.lblP1Stat3.Name = "lblP1Stat3"
-        Me.lblP1Stat3.Size = New System.Drawing.Size(19, 23)
+        Me.lblP1Stat3.Size = New System.Drawing.Size(15, 17)
         Me.lblP1Stat3.TabIndex = 21
         Me.lblP1Stat3.Text = "0"
         '
@@ -293,7 +297,7 @@ Partial Class frmMain
         Me.lblP2Stat3.AutoSize = True
         Me.lblP2Stat3.Location = New System.Drawing.Point(450, 283)
         Me.lblP2Stat3.Name = "lblP2Stat3"
-        Me.lblP2Stat3.Size = New System.Drawing.Size(19, 23)
+        Me.lblP2Stat3.Size = New System.Drawing.Size(15, 17)
         Me.lblP2Stat3.TabIndex = 28
         Me.lblP2Stat3.Text = "0"
         '
@@ -303,7 +307,7 @@ Partial Class frmMain
         Me.Label8.Font = New System.Drawing.Font("AR DESTINE", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(144, 26)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(271, 43)
+        Me.Label8.Size = New System.Drawing.Size(218, 34)
         Me.Label8.TabIndex = 30
         Me.Label8.Text = "MatchTracker"
         '
@@ -313,7 +317,7 @@ Partial Class frmMain
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatchToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(558, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(558, 24)
         Me.MenuStrip1.TabIndex = 31
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -322,34 +326,34 @@ Partial Class frmMain
         Me.MatchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuStats, Me.MatchLogToolStripMenuItem, Me.mnuNewMatch})
         Me.MatchToolStripMenuItem.Name = "MatchToolStripMenuItem"
         Me.MatchToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
-        Me.MatchToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
+        Me.MatchToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.MatchToolStripMenuItem.Text = "Match"
         '
         'mnuStats
         '
         Me.mnuStats.Name = "mnuStats"
         Me.mnuStats.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.mnuStats.Size = New System.Drawing.Size(212, 26)
+        Me.mnuStats.Size = New System.Drawing.Size(178, 22)
         Me.mnuStats.Text = "Stats"
         '
         'MatchLogToolStripMenuItem
         '
         Me.MatchLogToolStripMenuItem.Name = "MatchLogToolStripMenuItem"
         Me.MatchLogToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L), System.Windows.Forms.Keys)
-        Me.MatchLogToolStripMenuItem.Size = New System.Drawing.Size(212, 26)
+        Me.MatchLogToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.MatchLogToolStripMenuItem.Text = "Match Log"
         '
         'mnuNewMatch
         '
         Me.mnuNewMatch.Name = "mnuNewMatch"
         Me.mnuNewMatch.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.mnuNewMatch.Size = New System.Drawing.Size(212, 26)
+        Me.mnuNewMatch.Size = New System.Drawing.Size(178, 22)
         Me.mnuNewMatch.Text = "New Match"
         '
         'frmMain
         '
         Me.AcceptButton = Me.btnGame
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(558, 445)
         Me.Controls.Add(Me.Label8)
@@ -374,10 +378,10 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblP1S2)
         Me.Controls.Add(Me.lblP2S3)
         Me.Controls.Add(Me.lblP1S3)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblP2S4)
+        Me.Controls.Add(Me.lblP1S4)
+        Me.Controls.Add(Me.lblP2S5)
+        Me.Controls.Add(Me.lblP1S5)
         Me.Controls.Add(Me.lblPlayer2)
         Me.Controls.Add(Me.lblPlayer1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -396,10 +400,10 @@ Partial Class frmMain
 
     Friend WithEvents lblPlayer1 As Label
     Friend WithEvents lblPlayer2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblP1S5 As Label
+    Friend WithEvents lblP2S5 As Label
+    Friend WithEvents lblP1S4 As Label
+    Friend WithEvents lblP2S4 As Label
     Friend WithEvents lblP1S3 As Label
     Friend WithEvents lblP2S3 As Label
     Friend WithEvents lblP1S2 As Label
