@@ -16,6 +16,10 @@
         If boolAdScore Then
             If lblP1Score.Text = "40" AndAlso lblP2Score.Text = "40" Then
                 chkPlayer1.Checked = True
+                lblWinner.Text = strPlayer1 + Environment.NewLine + " Won"
+                btnP1Point.Enabled = False
+                btnP2Point.Enabled = False
+
             Else
                 intcurrentPoint1 = intcurrentPoint1 + 1
                 lblP1Score.Text = points(intcurrentPoint1)
@@ -31,9 +35,16 @@
                 intcurrentPoint1 = 3
                 lblP1Score.Text = points(intcurrentPoint1)
                 chkPlayer1.Checked = True
+                lblWinner.Text = strPlayer1 + Environment.NewLine + " Won"
+                btnP1Point.Enabled = False
+                btnP2Point.Enabled = False
 
             ElseIf lblP1Score.Text = "AD" Xor lblP2Score.Text = "AD" Then
                 chkPlayer1.Checked = True
+                lblWinner.Text = strPlayer1 + Environment.NewLine + " Won"
+                btnP1Point.Enabled = False
+                btnP2Point.Enabled = False
+
             Else
                 intcurrentPoint1 = intcurrentPoint1 + 1
                 lblP1Score.Text = points(intcurrentPoint1)
@@ -127,6 +138,10 @@
         If boolAdScore Then
             If lblP2Score.Text = "40" AndAlso lblP1Score.Text = "40" Then
                 chkPlayer2.Checked = True
+                lblWinner.Text = strPlayer2 + Environment.NewLine + " Won"
+                btnP1Point.Enabled = False
+                btnP2Point.Enabled = False
+
             Else
                 intcurrentPoint2 = intcurrentPoint2 + 1
                 lblP2Score.Text = points(intcurrentPoint2)
@@ -140,8 +155,14 @@
                 lblP1Score.Text = points(intcurrentPoint1)
             ElseIf lblP1Score.Text <> "40" AndAlso lblP2Score.Text = "40" Then
                 chkPlayer2.Checked = True
+                lblWinner.Text = strPlayer2 + Environment.NewLine + " Won"
+                btnP1Point.Enabled = False
+                btnP2Point.Enabled = False
             ElseIf lblP1Score.Text = "AD" Xor lblP2Score.Text = "AD" Then
                 chkPlayer2.Checked = True
+                lblWinner.Text = strPlayer2 + Environment.NewLine + " Won"
+                btnP1Point.Enabled = False
+                btnP2Point.Enabled = False
             Else
                 intcurrentPoint2 = intcurrentPoint2 + 1
                 lblP2Score.Text = points(intcurrentPoint2)

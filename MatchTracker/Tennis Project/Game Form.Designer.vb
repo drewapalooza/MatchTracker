@@ -36,12 +36,13 @@ Partial Class frmGame
         Me.chkPlayer1 = New System.Windows.Forms.CheckBox()
         Me.chkPlayer2 = New System.Windows.Forms.CheckBox()
         Me.panServe = New System.Windows.Forms.Panel()
+        Me.rdoP2DoubleFault = New System.Windows.Forms.RadioButton()
+        Me.rdoP1DoubleFault = New System.Windows.Forms.RadioButton()
         Me.rdoP1SecondServe = New System.Windows.Forms.RadioButton()
         Me.rdoP2FirstServe = New System.Windows.Forms.RadioButton()
         Me.rdoP2SecondServe = New System.Windows.Forms.RadioButton()
         Me.rdoP1FirstServe = New System.Windows.Forms.RadioButton()
-        Me.rdoP1DoubleFault = New System.Windows.Forms.RadioButton()
-        Me.rdoP2DoubleFault = New System.Windows.Forms.RadioButton()
+        Me.lblWinner = New System.Windows.Forms.Label()
         Me.panServe.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +52,7 @@ Partial Class frmGame
         Me.lblPlayer1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer1.Location = New System.Drawing.Point(58, 9)
         Me.lblPlayer1.Name = "lblPlayer1"
-        Me.lblPlayer1.Size = New System.Drawing.Size(148, 46)
+        Me.lblPlayer1.Size = New System.Drawing.Size(121, 37)
         Me.lblPlayer1.TabIndex = 15
         Me.lblPlayer1.Text = "Player 1"
         '
@@ -61,7 +62,7 @@ Partial Class frmGame
         Me.lblPlayer2.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer2.Location = New System.Drawing.Point(332, 9)
         Me.lblPlayer2.Name = "lblPlayer2"
-        Me.lblPlayer2.Size = New System.Drawing.Size(148, 46)
+        Me.lblPlayer2.Size = New System.Drawing.Size(121, 37)
         Me.lblPlayer2.TabIndex = 16
         Me.lblPlayer2.Text = "Player 2"
         '
@@ -71,7 +72,7 @@ Partial Class frmGame
         Me.lblP1Score.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblP1Score.Location = New System.Drawing.Point(191, 93)
         Me.lblP1Score.Name = "lblP1Score"
-        Me.lblP1Score.Size = New System.Drawing.Size(40, 46)
+        Me.lblP1Score.Size = New System.Drawing.Size(33, 37)
         Me.lblP1Score.TabIndex = 12
         Me.lblP1Score.Text = "0"
         '
@@ -99,7 +100,7 @@ Partial Class frmGame
         Me.lblP2Score.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblP2Score.Location = New System.Drawing.Point(273, 93)
         Me.lblP2Score.Name = "lblP2Score"
-        Me.lblP2Score.Size = New System.Drawing.Size(40, 46)
+        Me.lblP2Score.Size = New System.Drawing.Size(33, 37)
         Me.lblP2Score.TabIndex = 14
         Me.lblP2Score.Text = "0"
         '
@@ -109,7 +110,7 @@ Partial Class frmGame
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(239, 93)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 46)
+        Me.Label5.Size = New System.Drawing.Size(28, 37)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "-"
         '
@@ -118,7 +119,7 @@ Partial Class frmGame
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Location = New System.Drawing.Point(74, 49)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(78, 27)
+        Me.RadioButton1.Size = New System.Drawing.Size(63, 21)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.Text = "Server"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -128,7 +129,7 @@ Partial Class frmGame
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Location = New System.Drawing.Point(340, 49)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(78, 27)
+        Me.RadioButton2.Size = New System.Drawing.Size(63, 21)
         Me.RadioButton2.TabIndex = 2
         Me.RadioButton2.Text = "Server"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -156,7 +157,7 @@ Partial Class frmGame
         Me.chkPlayer1.AutoSize = True
         Me.chkPlayer1.Location = New System.Drawing.Point(69, 76)
         Me.chkPlayer1.Name = "chkPlayer1"
-        Me.chkPlayer1.Size = New System.Drawing.Size(87, 27)
+        Me.chkPlayer1.Size = New System.Drawing.Size(68, 21)
         Me.chkPlayer1.TabIndex = 1
         Me.chkPlayer1.Text = "Winner"
         Me.chkPlayer1.UseVisualStyleBackColor = True
@@ -166,7 +167,7 @@ Partial Class frmGame
         Me.chkPlayer2.AutoSize = True
         Me.chkPlayer2.Location = New System.Drawing.Point(340, 76)
         Me.chkPlayer2.Name = "chkPlayer2"
-        Me.chkPlayer2.Size = New System.Drawing.Size(87, 27)
+        Me.chkPlayer2.Size = New System.Drawing.Size(68, 21)
         Me.chkPlayer2.TabIndex = 3
         Me.chkPlayer2.Text = "Winner"
         Me.chkPlayer2.UseVisualStyleBackColor = True
@@ -184,12 +185,34 @@ Partial Class frmGame
         Me.panServe.Size = New System.Drawing.Size(427, 100)
         Me.panServe.TabIndex = 19
         '
+        'rdoP2DoubleFault
+        '
+        Me.rdoP2DoubleFault.AutoSize = True
+        Me.rdoP2DoubleFault.Location = New System.Drawing.Point(288, 69)
+        Me.rdoP2DoubleFault.Name = "rdoP2DoubleFault"
+        Me.rdoP2DoubleFault.Size = New System.Drawing.Size(99, 21)
+        Me.rdoP2DoubleFault.TabIndex = 22
+        Me.rdoP2DoubleFault.TabStop = True
+        Me.rdoP2DoubleFault.Text = "Double Fault"
+        Me.rdoP2DoubleFault.UseVisualStyleBackColor = True
+        '
+        'rdoP1DoubleFault
+        '
+        Me.rdoP1DoubleFault.AutoSize = True
+        Me.rdoP1DoubleFault.Location = New System.Drawing.Point(35, 69)
+        Me.rdoP1DoubleFault.Name = "rdoP1DoubleFault"
+        Me.rdoP1DoubleFault.Size = New System.Drawing.Size(99, 21)
+        Me.rdoP1DoubleFault.TabIndex = 21
+        Me.rdoP1DoubleFault.TabStop = True
+        Me.rdoP1DoubleFault.Text = "Double Fault"
+        Me.rdoP1DoubleFault.UseVisualStyleBackColor = True
+        '
         'rdoP1SecondServe
         '
         Me.rdoP1SecondServe.AutoSize = True
         Me.rdoP1SecondServe.Location = New System.Drawing.Point(35, 36)
         Me.rdoP1SecondServe.Name = "rdoP1SecondServe"
-        Me.rdoP1SecondServe.Size = New System.Drawing.Size(133, 27)
+        Me.rdoP1SecondServe.Size = New System.Drawing.Size(105, 21)
         Me.rdoP1SecondServe.TabIndex = 20
         Me.rdoP1SecondServe.TabStop = True
         Me.rdoP1SecondServe.Text = "Second Serve"
@@ -200,7 +223,7 @@ Partial Class frmGame
         Me.rdoP2FirstServe.AutoSize = True
         Me.rdoP2FirstServe.Location = New System.Drawing.Point(288, 3)
         Me.rdoP2FirstServe.Name = "rdoP2FirstServe"
-        Me.rdoP2FirstServe.Size = New System.Drawing.Size(108, 27)
+        Me.rdoP2FirstServe.Size = New System.Drawing.Size(86, 21)
         Me.rdoP2FirstServe.TabIndex = 19
         Me.rdoP2FirstServe.TabStop = True
         Me.rdoP2FirstServe.Text = "First Serve"
@@ -211,7 +234,7 @@ Partial Class frmGame
         Me.rdoP2SecondServe.AutoSize = True
         Me.rdoP2SecondServe.Location = New System.Drawing.Point(288, 36)
         Me.rdoP2SecondServe.Name = "rdoP2SecondServe"
-        Me.rdoP2SecondServe.Size = New System.Drawing.Size(133, 27)
+        Me.rdoP2SecondServe.Size = New System.Drawing.Size(105, 21)
         Me.rdoP2SecondServe.TabIndex = 18
         Me.rdoP2SecondServe.TabStop = True
         Me.rdoP2SecondServe.Text = "Second Serve"
@@ -222,40 +245,28 @@ Partial Class frmGame
         Me.rdoP1FirstServe.AutoSize = True
         Me.rdoP1FirstServe.Location = New System.Drawing.Point(35, 3)
         Me.rdoP1FirstServe.Name = "rdoP1FirstServe"
-        Me.rdoP1FirstServe.Size = New System.Drawing.Size(108, 27)
+        Me.rdoP1FirstServe.Size = New System.Drawing.Size(86, 21)
         Me.rdoP1FirstServe.TabIndex = 17
         Me.rdoP1FirstServe.TabStop = True
         Me.rdoP1FirstServe.Text = "First Serve"
         Me.rdoP1FirstServe.UseVisualStyleBackColor = True
         '
-        'rdoP1DoubleFault
+        'lblWinner
         '
-        Me.rdoP1DoubleFault.AutoSize = True
-        Me.rdoP1DoubleFault.Location = New System.Drawing.Point(35, 69)
-        Me.rdoP1DoubleFault.Name = "rdoP1DoubleFault"
-        Me.rdoP1DoubleFault.Size = New System.Drawing.Size(127, 27)
-        Me.rdoP1DoubleFault.TabIndex = 21
-        Me.rdoP1DoubleFault.TabStop = True
-        Me.rdoP1DoubleFault.Text = "Double Fault"
-        Me.rdoP1DoubleFault.UseVisualStyleBackColor = True
-        '
-        'rdoP2DoubleFault
-        '
-        Me.rdoP2DoubleFault.AutoSize = True
-        Me.rdoP2DoubleFault.Location = New System.Drawing.Point(288, 69)
-        Me.rdoP2DoubleFault.Name = "rdoP2DoubleFault"
-        Me.rdoP2DoubleFault.Size = New System.Drawing.Size(127, 27)
-        Me.rdoP2DoubleFault.TabIndex = 22
-        Me.rdoP2DoubleFault.TabStop = True
-        Me.rdoP2DoubleFault.Text = "Double Fault"
-        Me.rdoP2DoubleFault.UseVisualStyleBackColor = True
+        Me.lblWinner.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWinner.Location = New System.Drawing.Point(185, 9)
+        Me.lblWinner.Name = "lblWinner"
+        Me.lblWinner.Size = New System.Drawing.Size(141, 84)
+        Me.lblWinner.TabIndex = 20
+        Me.lblWinner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmGame
         '
         Me.AcceptButton = Me.btnGameSubmit
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(511, 471)
+        Me.Controls.Add(Me.lblWinner)
         Me.Controls.Add(Me.panServe)
         Me.Controls.Add(Me.chkPlayer2)
         Me.Controls.Add(Me.chkPlayer1)
@@ -302,4 +313,5 @@ Partial Class frmGame
     Friend WithEvents rdoP1FirstServe As RadioButton
     Friend WithEvents rdoP2DoubleFault As RadioButton
     Friend WithEvents rdoP1DoubleFault As RadioButton
+    Friend WithEvents lblWinner As Label
 End Class

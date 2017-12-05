@@ -191,7 +191,7 @@ Partial Class frmMain
         Me.btnGame.Name = "btnGame"
         Me.btnGame.Size = New System.Drawing.Size(100, 125)
         Me.btnGame.TabIndex = 0
-        Me.btnGame.Text = "Continue"
+        Me.btnGame.Text = "Next &Game"
         Me.btnGame.UseVisualStyleBackColor = True
         '
         'lblScore
