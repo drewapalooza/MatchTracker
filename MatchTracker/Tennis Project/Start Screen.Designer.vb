@@ -26,6 +26,8 @@ Partial Class Start_Screen
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtPlayer1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lstMaxGame = New System.Windows.Forms.ComboBox()
+        Me.lstSetCount = New System.Windows.Forms.ComboBox()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.chkAdScore = New System.Windows.Forms.CheckBox()
@@ -34,8 +36,6 @@ Partial Class Start_Screen
         Me.btnQuickStart = New System.Windows.Forms.Button()
         Me.txtPlayer2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.lstSetCount = New System.Windows.Forms.ComboBox()
-        Me.lstMaxGame = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,7 +46,7 @@ Partial Class Start_Screen
         Me.Label8.Location = New System.Drawing.Point(195, 27)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(218, 34)
-        Me.Label8.TabIndex = 31
+        Me.Label8.TabIndex = 6
         Me.Label8.Text = "MatchTracker"
         '
         'Label1
@@ -55,7 +55,7 @@ Partial Class Start_Screen
         Me.Label1.Location = New System.Drawing.Point(55, 111)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 19)
-        Me.Label1.TabIndex = 32
+        Me.Label1.TabIndex = 0
         Me.Label1.Text = "Player 1"
         '
         'txtPlayer1
@@ -63,7 +63,7 @@ Partial Class Start_Screen
         Me.txtPlayer1.Location = New System.Drawing.Point(59, 137)
         Me.txtPlayer1.Name = "txtPlayer1"
         Me.txtPlayer1.Size = New System.Drawing.Size(176, 26)
-        Me.txtPlayer1.TabIndex = 34
+        Me.txtPlayer1.TabIndex = 1
         '
         'GroupBox1
         '
@@ -77,16 +77,34 @@ Partial Class Start_Screen
         Me.GroupBox1.Location = New System.Drawing.Point(59, 196)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(543, 113)
-        Me.GroupBox1.TabIndex = 36
+        Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Options"
+        '
+        'lstMaxGame
+        '
+        Me.lstMaxGame.FormattingEnabled = True
+        Me.lstMaxGame.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        Me.lstMaxGame.Location = New System.Drawing.Point(118, 71)
+        Me.lstMaxGame.Name = "lstMaxGame"
+        Me.lstMaxGame.Size = New System.Drawing.Size(52, 27)
+        Me.lstMaxGame.TabIndex = 3
+        '
+        'lstSetCount
+        '
+        Me.lstSetCount.FormattingEnabled = True
+        Me.lstSetCount.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.lstSetCount.Location = New System.Drawing.Point(118, 28)
+        Me.lstSetCount.Name = "lstSetCount"
+        Me.lstSetCount.Size = New System.Drawing.Size(52, 27)
+        Me.lstSetCount.TabIndex = 1
         '
         'btnStart
         '
         Me.btnStart.Location = New System.Drawing.Point(420, 34)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(103, 64)
-        Me.btnStart.TabIndex = 7
+        Me.btnStart.TabIndex = 6
         Me.btnStart.Text = "Start Match"
         Me.btnStart.UseVisualStyleBackColor = True
         '
@@ -96,7 +114,7 @@ Partial Class Start_Screen
         Me.Label5.Location = New System.Drawing.Point(218, 50)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(57, 19)
-        Me.Label5.TabIndex = 6
+        Me.Label5.TabIndex = 4
         Me.Label5.Text = "Scoring:"
         '
         'chkAdScore
@@ -132,7 +150,7 @@ Partial Class Start_Screen
         Me.btnQuickStart.Location = New System.Drawing.Point(277, 137)
         Me.btnQuickStart.Name = "btnQuickStart"
         Me.btnQuickStart.Size = New System.Drawing.Size(107, 30)
-        Me.btnQuickStart.TabIndex = 37
+        Me.btnQuickStart.TabIndex = 4
         Me.btnQuickStart.Text = "QuickStart"
         Me.btnQuickStart.UseVisualStyleBackColor = True
         '
@@ -141,7 +159,7 @@ Partial Class Start_Screen
         Me.txtPlayer2.Location = New System.Drawing.Point(426, 137)
         Me.txtPlayer2.Name = "txtPlayer2"
         Me.txtPlayer2.Size = New System.Drawing.Size(176, 26)
-        Me.txtPlayer2.TabIndex = 39
+        Me.txtPlayer2.TabIndex = 3
         '
         'Label2
         '
@@ -149,26 +167,8 @@ Partial Class Start_Screen
         Me.Label2.Location = New System.Drawing.Point(421, 111)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 19)
-        Me.Label2.TabIndex = 38
+        Me.Label2.TabIndex = 2
         Me.Label2.Text = "Player 2"
-        '
-        'lstSetCount
-        '
-        Me.lstSetCount.FormattingEnabled = True
-        Me.lstSetCount.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.lstSetCount.Location = New System.Drawing.Point(118, 28)
-        Me.lstSetCount.Name = "lstSetCount"
-        Me.lstSetCount.Size = New System.Drawing.Size(52, 27)
-        Me.lstSetCount.TabIndex = 42
-        '
-        'lstMaxGame
-        '
-        Me.lstMaxGame.FormattingEnabled = True
-        Me.lstMaxGame.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        Me.lstMaxGame.Location = New System.Drawing.Point(118, 71)
-        Me.lstMaxGame.Name = "lstMaxGame"
-        Me.lstMaxGame.Size = New System.Drawing.Size(52, 27)
-        Me.lstMaxGame.TabIndex = 43
         '
         'Start_Screen
         '

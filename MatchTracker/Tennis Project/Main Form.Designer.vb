@@ -64,7 +64,7 @@ Partial Class frmMain
         Me.lblPlayer1.Location = New System.Drawing.Point(86, 93)
         Me.lblPlayer1.Name = "lblPlayer1"
         Me.lblPlayer1.Size = New System.Drawing.Size(386, 29)
-        Me.lblPlayer1.TabIndex = 5
+        Me.lblPlayer1.TabIndex = 4
         Me.lblPlayer1.Text = "Player 1"
         Me.lblPlayer1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -74,7 +74,7 @@ Partial Class frmMain
         Me.lblPlayer2.Location = New System.Drawing.Point(86, 122)
         Me.lblPlayer2.Name = "lblPlayer2"
         Me.lblPlayer2.Size = New System.Drawing.Size(386, 29)
-        Me.lblPlayer2.TabIndex = 6
+        Me.lblPlayer2.TabIndex = 5
         Me.lblPlayer2.Text = "Player 2"
         Me.lblPlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -84,7 +84,7 @@ Partial Class frmMain
         Me.lblP1S5.Location = New System.Drawing.Point(443, 93)
         Me.lblP1S5.Name = "lblP1S5"
         Me.lblP1S5.Size = New System.Drawing.Size(29, 29)
-        Me.lblP1S5.TabIndex = 11
+        Me.lblP1S5.TabIndex = 15
         Me.lblP1S5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP2S5
@@ -102,7 +102,7 @@ Partial Class frmMain
         Me.lblP1S4.Location = New System.Drawing.Point(415, 93)
         Me.lblP1S4.Name = "lblP1S4"
         Me.lblP1S4.Size = New System.Drawing.Size(29, 29)
-        Me.lblP1S4.TabIndex = 10
+        Me.lblP1S4.TabIndex = 13
         Me.lblP1S4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP2S4
@@ -111,7 +111,7 @@ Partial Class frmMain
         Me.lblP2S4.Location = New System.Drawing.Point(415, 122)
         Me.lblP2S4.Name = "lblP2S4"
         Me.lblP2S4.Size = New System.Drawing.Size(29, 29)
-        Me.lblP2S4.TabIndex = 15
+        Me.lblP2S4.TabIndex = 14
         Me.lblP2S4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP1S3
@@ -120,7 +120,7 @@ Partial Class frmMain
         Me.lblP1S3.Location = New System.Drawing.Point(387, 93)
         Me.lblP1S3.Name = "lblP1S3"
         Me.lblP1S3.Size = New System.Drawing.Size(29, 29)
-        Me.lblP1S3.TabIndex = 9
+        Me.lblP1S3.TabIndex = 11
         Me.lblP1S3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP2S3
@@ -129,7 +129,7 @@ Partial Class frmMain
         Me.lblP2S3.Location = New System.Drawing.Point(387, 122)
         Me.lblP2S3.Name = "lblP2S3"
         Me.lblP2S3.Size = New System.Drawing.Size(29, 29)
-        Me.lblP2S3.TabIndex = 14
+        Me.lblP2S3.TabIndex = 12
         Me.lblP2S3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP1S2
@@ -138,7 +138,7 @@ Partial Class frmMain
         Me.lblP1S2.Location = New System.Drawing.Point(358, 93)
         Me.lblP1S2.Name = "lblP1S2"
         Me.lblP1S2.Size = New System.Drawing.Size(29, 29)
-        Me.lblP1S2.TabIndex = 8
+        Me.lblP1S2.TabIndex = 9
         Me.lblP1S2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP2S2
@@ -147,7 +147,7 @@ Partial Class frmMain
         Me.lblP2S2.Location = New System.Drawing.Point(358, 122)
         Me.lblP2S2.Name = "lblP2S2"
         Me.lblP2S2.Size = New System.Drawing.Size(29, 29)
-        Me.lblP2S2.TabIndex = 13
+        Me.lblP2S2.TabIndex = 10
         Me.lblP2S2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP1S1
@@ -156,7 +156,7 @@ Partial Class frmMain
         Me.lblP1S1.Location = New System.Drawing.Point(331, 93)
         Me.lblP1S1.Name = "lblP1S1"
         Me.lblP1S1.Size = New System.Drawing.Size(29, 29)
-        Me.lblP1S1.TabIndex = 7
+        Me.lblP1S1.TabIndex = 6
         Me.lblP1S1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblP2S1
@@ -165,7 +165,7 @@ Partial Class frmMain
         Me.lblP2S1.Location = New System.Drawing.Point(331, 122)
         Me.lblP2S1.Name = "lblP2S1"
         Me.lblP2S1.Size = New System.Drawing.Size(29, 29)
-        Me.lblP2S1.TabIndex = 12
+        Me.lblP2S1.TabIndex = 8
         Me.lblP2S1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblDesc
@@ -174,7 +174,7 @@ Partial Class frmMain
         Me.lblDesc.Location = New System.Drawing.Point(12, 355)
         Me.lblDesc.Name = "lblDesc"
         Me.lblDesc.Size = New System.Drawing.Size(534, 81)
-        Me.lblDesc.TabIndex = 29
+        Me.lblDesc.TabIndex = 0
         '
         'btnSet
         '
@@ -308,7 +308,7 @@ Partial Class frmMain
         Me.Label8.Location = New System.Drawing.Point(144, 26)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(218, 34)
-        Me.Label8.TabIndex = 30
+        Me.Label8.TabIndex = 3
         Me.Label8.Text = "MatchTracker"
         '
         'MenuStrip1
@@ -318,7 +318,7 @@ Partial Class frmMain
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(558, 24)
-        Me.MenuStrip1.TabIndex = 31
+        Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'MatchToolStripMenuItem

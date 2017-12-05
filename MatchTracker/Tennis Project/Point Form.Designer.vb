@@ -48,7 +48,7 @@ Partial Class frmPoint
         Me.Label1.Location = New System.Drawing.Point(93, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(160, 32)
-        Me.Label1.TabIndex = 0
+        Me.Label1.TabIndex = 2
         Me.Label1.Text = "Point Details"
         '
         'radioAce
@@ -57,7 +57,7 @@ Partial Class frmPoint
         Me.radioAce.Location = New System.Drawing.Point(35, 35)
         Me.radioAce.Name = "radioAce"
         Me.radioAce.Size = New System.Drawing.Size(47, 21)
-        Me.radioAce.TabIndex = 3
+        Me.radioAce.TabIndex = 0
         Me.radioAce.Text = "Ace"
         Me.radioAce.UseVisualStyleBackColor = True
         '
@@ -67,7 +67,7 @@ Partial Class frmPoint
         Me.radioDouble.Location = New System.Drawing.Point(91, 35)
         Me.radioDouble.Name = "radioDouble"
         Me.radioDouble.Size = New System.Drawing.Size(97, 21)
-        Me.radioDouble.TabIndex = 4
+        Me.radioDouble.TabIndex = 1
         Me.radioDouble.Text = "Double fault"
         Me.radioDouble.UseVisualStyleBackColor = True
         '
@@ -77,7 +77,7 @@ Partial Class frmPoint
         Me.radioServiceWinner.Location = New System.Drawing.Point(194, 35)
         Me.radioServiceWinner.Name = "radioServiceWinner"
         Me.radioServiceWinner.Size = New System.Drawing.Size(109, 21)
-        Me.radioServiceWinner.TabIndex = 5
+        Me.radioServiceWinner.TabIndex = 2
         Me.radioServiceWinner.Text = "Service winner"
         Me.radioServiceWinner.UseVisualStyleBackColor = True
         '
@@ -87,7 +87,7 @@ Partial Class frmPoint
         Me.radioForehandWinner.Location = New System.Drawing.Point(48, 166)
         Me.radioForehandWinner.Name = "radioForehandWinner"
         Me.radioForehandWinner.Size = New System.Drawing.Size(123, 21)
-        Me.radioForehandWinner.TabIndex = 8
+        Me.radioForehandWinner.TabIndex = 6
         Me.radioForehandWinner.Text = "Forehand winner"
         Me.radioForehandWinner.UseVisualStyleBackColor = True
         '
@@ -97,7 +97,7 @@ Partial Class frmPoint
         Me.radioBackhandWinner.Location = New System.Drawing.Point(48, 193)
         Me.radioBackhandWinner.Name = "radioBackhandWinner"
         Me.radioBackhandWinner.Size = New System.Drawing.Size(123, 21)
-        Me.radioBackhandWinner.TabIndex = 9
+        Me.radioBackhandWinner.TabIndex = 8
         Me.radioBackhandWinner.Text = "Backhand winner"
         Me.radioBackhandWinner.UseVisualStyleBackColor = True
         '
@@ -107,7 +107,7 @@ Partial Class frmPoint
         Me.radioForehandError.Location = New System.Drawing.Point(184, 166)
         Me.radioForehandError.Name = "radioForehandError"
         Me.radioForehandError.Size = New System.Drawing.Size(115, 21)
-        Me.radioForehandError.TabIndex = 10
+        Me.radioForehandError.TabIndex = 7
         Me.radioForehandError.Text = "Forehand error"
         Me.radioForehandError.UseVisualStyleBackColor = True
         '
@@ -117,7 +117,7 @@ Partial Class frmPoint
         Me.radioBackhandError.Location = New System.Drawing.Point(184, 193)
         Me.radioBackhandError.Name = "radioBackhandError"
         Me.radioBackhandError.Size = New System.Drawing.Size(115, 21)
-        Me.radioBackhandError.TabIndex = 11
+        Me.radioBackhandError.TabIndex = 9
         Me.radioBackhandError.Text = "Backhand error"
         Me.radioBackhandError.UseVisualStyleBackColor = True
         '
@@ -127,7 +127,7 @@ Partial Class frmPoint
         Me.radioVolleyWinner.Location = New System.Drawing.Point(50, 35)
         Me.radioVolleyWinner.Name = "radioVolleyWinner"
         Me.radioVolleyWinner.Size = New System.Drawing.Size(102, 21)
-        Me.radioVolleyWinner.TabIndex = 14
+        Me.radioVolleyWinner.TabIndex = 0
         Me.radioVolleyWinner.Text = "Volley winner"
         Me.radioVolleyWinner.UseVisualStyleBackColor = True
         '
@@ -137,7 +137,7 @@ Partial Class frmPoint
         Me.radioVolleyError.Location = New System.Drawing.Point(195, 35)
         Me.radioVolleyError.Name = "radioVolleyError"
         Me.radioVolleyError.Size = New System.Drawing.Size(94, 21)
-        Me.radioVolleyError.TabIndex = 15
+        Me.radioVolleyError.TabIndex = 1
         Me.radioVolleyError.Text = "Volley error"
         Me.radioVolleyError.UseVisualStyleBackColor = True
         '
@@ -146,7 +146,7 @@ Partial Class frmPoint
         Me.btnSubmit.Location = New System.Drawing.Point(58, 337)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(102, 44)
-        Me.btnSubmit.TabIndex = 16
+        Me.btnSubmit.TabIndex = 0
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
@@ -155,7 +155,7 @@ Partial Class frmPoint
         Me.btnCancel.Location = New System.Drawing.Point(186, 337)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(102, 44)
-        Me.btnCancel.TabIndex = 17
+        Me.btnCancel.TabIndex = 1
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -167,7 +167,7 @@ Partial Class frmPoint
         Me.GroupBox1.Location = New System.Drawing.Point(3, 54)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(339, 90)
-        Me.GroupBox1.TabIndex = 19
+        Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Serve"
         '
@@ -176,7 +176,7 @@ Partial Class frmPoint
         Me.GroupBox2.Location = New System.Drawing.Point(3, 145)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(339, 90)
-        Me.GroupBox2.TabIndex = 20
+        Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Tag = ""
         Me.GroupBox2.Text = "Groundstroke"
@@ -188,7 +188,7 @@ Partial Class frmPoint
         Me.GroupBox3.Location = New System.Drawing.Point(3, 241)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(339, 90)
-        Me.GroupBox3.TabIndex = 21
+        Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Volley"
         '

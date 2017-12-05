@@ -4,11 +4,6 @@
     Private intcurrentPoint1 As Integer
     Private intcurrentPoint2 As Integer
 
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles lblP1Score.Click
-
-    End Sub
-
     Private Sub btnP1Point_Click(sender As Object, e As EventArgs) Handles btnP1Point.Click
         intWonLastPoint = 1
         frmPoint.Show()
