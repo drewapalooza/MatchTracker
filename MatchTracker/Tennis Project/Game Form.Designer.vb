@@ -29,8 +29,6 @@ Partial Class frmGame
         Me.btnP2Point = New System.Windows.Forms.Button()
         Me.lblP2Score = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.btnGameSubmit = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.chkPlayer1 = New System.Windows.Forms.CheckBox()
@@ -50,7 +48,7 @@ Partial Class frmGame
         '
         Me.lblPlayer1.AutoSize = True
         Me.lblPlayer1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer1.Location = New System.Drawing.Point(58, 9)
+        Me.lblPlayer1.Location = New System.Drawing.Point(53, 36)
         Me.lblPlayer1.Name = "lblPlayer1"
         Me.lblPlayer1.Size = New System.Drawing.Size(121, 37)
         Me.lblPlayer1.TabIndex = 4
@@ -60,7 +58,7 @@ Partial Class frmGame
         '
         Me.lblPlayer2.AutoSize = True
         Me.lblPlayer2.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer2.Location = New System.Drawing.Point(332, 9)
+        Me.lblPlayer2.Location = New System.Drawing.Point(315, 33)
         Me.lblPlayer2.Name = "lblPlayer2"
         Me.lblPlayer2.Size = New System.Drawing.Size(121, 37)
         Me.lblPlayer2.TabIndex = 5
@@ -113,26 +111,6 @@ Partial Class frmGame
         Me.Label5.Size = New System.Drawing.Size(28, 37)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "-"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(74, 49)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(63, 21)
-        Me.RadioButton1.TabIndex = 6
-        Me.RadioButton1.Text = "Server"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(340, 49)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(63, 21)
-        Me.RadioButton2.TabIndex = 7
-        Me.RadioButton2.Text = "Server"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'btnGameSubmit
         '
@@ -254,9 +232,9 @@ Partial Class frmGame
         'lblWinner
         '
         Me.lblWinner.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWinner.Location = New System.Drawing.Point(185, 9)
+        Me.lblWinner.Location = New System.Drawing.Point(170, 9)
         Me.lblWinner.Name = "lblWinner"
-        Me.lblWinner.Size = New System.Drawing.Size(141, 84)
+        Me.lblWinner.Size = New System.Drawing.Size(139, 84)
         Me.lblWinner.TabIndex = 8
         Me.lblWinner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -272,8 +250,6 @@ Partial Class frmGame
         Me.Controls.Add(Me.chkPlayer1)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnGameSubmit)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblP2Score)
         Me.Controls.Add(Me.btnP2Point)
@@ -300,8 +276,6 @@ Partial Class frmGame
     Friend WithEvents btnP2Point As Button
     Friend WithEvents lblP2Score As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents btnGameSubmit As Button
     Friend WithEvents btnCancel As Button
     Friend WithEvents chkPlayer1 As CheckBox
