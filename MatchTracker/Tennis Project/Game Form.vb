@@ -1,4 +1,7 @@
-﻿Public Class frmGame
+﻿Option Explicit On
+Option Infer Off
+Option Strict On
+Public Class frmGame
 
     Private points() As String = {"0", "15", "30", "40", "AD"}
     Private intcurrentPoint1 As Integer

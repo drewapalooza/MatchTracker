@@ -1,4 +1,7 @@
-﻿Public Class frmPoint
+﻿Option Explicit On
+Option Infer Off
+Option Strict On
+Public Class frmPoint
     Private Sub Label3_Click(sender As Object, e As EventArgs)
 
     End Sub

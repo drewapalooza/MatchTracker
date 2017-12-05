@@ -40,10 +40,10 @@ Partial Class frmStat
         Me.lblStatPageP2Errors = New System.Windows.Forms.Label()
         Me.lblStatPageP1FirstServePerc = New System.Windows.Forms.Label()
         Me.lblStatPageP2FirstServePerc = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.lblStatPagePlayer1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblStatPagePlayer2 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,7 +54,7 @@ Partial Class frmStat
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.97985!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.02015!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 249.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 252.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.lblStatPageP2Points, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lblStatPageP1Points, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 0)
@@ -93,9 +93,9 @@ Partial Class frmStat
         'lblStatPageP2Points
         '
         Me.lblStatPageP2Points.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblStatPageP2Points.Location = New System.Drawing.Point(384, 2)
+        Me.lblStatPageP2Points.Location = New System.Drawing.Point(381, 2)
         Me.lblStatPageP2Points.Name = "lblStatPageP2Points"
-        Me.lblStatPageP2Points.Size = New System.Drawing.Size(244, 28)
+        Me.lblStatPageP2Points.Size = New System.Drawing.Size(247, 28)
         Me.lblStatPageP2Points.TabIndex = 2
         Me.lblStatPageP2Points.Text = "0"
         Me.lblStatPageP2Points.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -105,7 +105,7 @@ Partial Class frmStat
         Me.lblStatPageP1Points.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblStatPageP1Points.Location = New System.Drawing.Point(5, 2)
         Me.lblStatPageP1Points.Name = "lblStatPageP1Points"
-        Me.lblStatPageP1Points.Size = New System.Drawing.Size(234, 28)
+        Me.lblStatPageP1Points.Size = New System.Drawing.Size(232, 28)
         Me.lblStatPageP1Points.TabIndex = 1
         Me.lblStatPageP1Points.Text = "0"
         Me.lblStatPageP1Points.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -113,9 +113,9 @@ Partial Class frmStat
         'Label1
         '
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label1.Location = New System.Drawing.Point(247, 2)
+        Me.Label1.Location = New System.Drawing.Point(245, 2)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(129, 28)
+        Me.Label1.Size = New System.Drawing.Size(128, 28)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total Points Won"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -123,9 +123,9 @@ Partial Class frmStat
         'Label3
         '
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label3.Location = New System.Drawing.Point(247, 32)
+        Me.Label3.Location = New System.Drawing.Point(245, 32)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 28)
+        Me.Label3.Size = New System.Drawing.Size(128, 28)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Aces"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -133,9 +133,9 @@ Partial Class frmStat
         'Label4
         '
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label4.Location = New System.Drawing.Point(247, 62)
+        Me.Label4.Location = New System.Drawing.Point(245, 62)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(129, 27)
+        Me.Label4.Size = New System.Drawing.Size(128, 27)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Double Faults"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -143,9 +143,9 @@ Partial Class frmStat
         'Label5
         '
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label5.Location = New System.Drawing.Point(247, 91)
+        Me.Label5.Location = New System.Drawing.Point(245, 91)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(129, 25)
+        Me.Label5.Size = New System.Drawing.Size(128, 25)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Winners"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -153,9 +153,9 @@ Partial Class frmStat
         'Label6
         '
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label6.Location = New System.Drawing.Point(247, 118)
+        Me.Label6.Location = New System.Drawing.Point(245, 118)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(129, 24)
+        Me.Label6.Size = New System.Drawing.Size(128, 24)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Errors"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -165,7 +165,7 @@ Partial Class frmStat
         Me.lblStatPageP1Aces.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblStatPageP1Aces.Location = New System.Drawing.Point(5, 32)
         Me.lblStatPageP1Aces.Name = "lblStatPageP1Aces"
-        Me.lblStatPageP1Aces.Size = New System.Drawing.Size(234, 28)
+        Me.lblStatPageP1Aces.Size = New System.Drawing.Size(232, 28)
         Me.lblStatPageP1Aces.TabIndex = 8
         Me.lblStatPageP1Aces.Text = "0"
         Me.lblStatPageP1Aces.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -173,9 +173,9 @@ Partial Class frmStat
         'lblStatPageP2Aces
         '
         Me.lblStatPageP2Aces.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblStatPageP2Aces.Location = New System.Drawing.Point(384, 32)
+        Me.lblStatPageP2Aces.Location = New System.Drawing.Point(381, 32)
         Me.lblStatPageP2Aces.Name = "lblStatPageP2Aces"
-        Me.lblStatPageP2Aces.Size = New System.Drawing.Size(244, 28)
+        Me.lblStatPageP2Aces.Size = New System.Drawing.Size(247, 28)
         Me.lblStatPageP2Aces.TabIndex = 9
         Me.lblStatPageP2Aces.Text = "0"
         Me.lblStatPageP2Aces.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -185,7 +185,7 @@ Partial Class frmStat
         Me.lblStatPageP1Double.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblStatPageP1Double.Location = New System.Drawing.Point(5, 62)
         Me.lblStatPageP1Double.Name = "lblStatPageP1Double"
-        Me.lblStatPageP1Double.Size = New System.Drawing.Size(234, 27)
+        Me.lblStatPageP1Double.Size = New System.Drawing.Size(232, 27)
         Me.lblStatPageP1Double.TabIndex = 7
         Me.lblStatPageP1Double.Text = "0"
         Me.lblStatPageP1Double.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -193,9 +193,9 @@ Partial Class frmStat
         'lblStatPageP2Double
         '
         Me.lblStatPageP2Double.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblStatPageP2Double.Location = New System.Drawing.Point(384, 62)
+        Me.lblStatPageP2Double.Location = New System.Drawing.Point(381, 62)
         Me.lblStatPageP2Double.Name = "lblStatPageP2Double"
-        Me.lblStatPageP2Double.Size = New System.Drawing.Size(244, 27)
+        Me.lblStatPageP2Double.Size = New System.Drawing.Size(247, 27)
         Me.lblStatPageP2Double.TabIndex = 10
         Me.lblStatPageP2Double.Text = "0"
         Me.lblStatPageP2Double.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -204,7 +204,7 @@ Partial Class frmStat
         '
         Me.lblStatPageP1Winners.Location = New System.Drawing.Point(5, 91)
         Me.lblStatPageP1Winners.Name = "lblStatPageP1Winners"
-        Me.lblStatPageP1Winners.Size = New System.Drawing.Size(234, 25)
+        Me.lblStatPageP1Winners.Size = New System.Drawing.Size(232, 25)
         Me.lblStatPageP1Winners.TabIndex = 11
         Me.lblStatPageP1Winners.Text = "0"
         Me.lblStatPageP1Winners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -212,9 +212,9 @@ Partial Class frmStat
         'lblStatPageP2Winners
         '
         Me.lblStatPageP2Winners.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblStatPageP2Winners.Location = New System.Drawing.Point(384, 91)
+        Me.lblStatPageP2Winners.Location = New System.Drawing.Point(381, 91)
         Me.lblStatPageP2Winners.Name = "lblStatPageP2Winners"
-        Me.lblStatPageP2Winners.Size = New System.Drawing.Size(244, 25)
+        Me.lblStatPageP2Winners.Size = New System.Drawing.Size(247, 25)
         Me.lblStatPageP2Winners.TabIndex = 12
         Me.lblStatPageP2Winners.Text = "0"
         Me.lblStatPageP2Winners.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -223,7 +223,7 @@ Partial Class frmStat
         '
         Me.lblStatPageP1Errors.Location = New System.Drawing.Point(5, 118)
         Me.lblStatPageP1Errors.Name = "lblStatPageP1Errors"
-        Me.lblStatPageP1Errors.Size = New System.Drawing.Size(234, 24)
+        Me.lblStatPageP1Errors.Size = New System.Drawing.Size(232, 24)
         Me.lblStatPageP1Errors.TabIndex = 13
         Me.lblStatPageP1Errors.Text = "0"
         Me.lblStatPageP1Errors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -231,9 +231,9 @@ Partial Class frmStat
         'lblStatPageP2Errors
         '
         Me.lblStatPageP2Errors.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblStatPageP2Errors.Location = New System.Drawing.Point(384, 118)
+        Me.lblStatPageP2Errors.Location = New System.Drawing.Point(381, 118)
         Me.lblStatPageP2Errors.Name = "lblStatPageP2Errors"
-        Me.lblStatPageP2Errors.Size = New System.Drawing.Size(244, 24)
+        Me.lblStatPageP2Errors.Size = New System.Drawing.Size(247, 24)
         Me.lblStatPageP2Errors.TabIndex = 14
         Me.lblStatPageP2Errors.Text = "0"
         Me.lblStatPageP2Errors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -243,7 +243,7 @@ Partial Class frmStat
         Me.lblStatPageP1FirstServePerc.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblStatPageP1FirstServePerc.Location = New System.Drawing.Point(5, 146)
         Me.lblStatPageP1FirstServePerc.Name = "lblStatPageP1FirstServePerc"
-        Me.lblStatPageP1FirstServePerc.Size = New System.Drawing.Size(234, 24)
+        Me.lblStatPageP1FirstServePerc.Size = New System.Drawing.Size(232, 24)
         Me.lblStatPageP1FirstServePerc.TabIndex = 15
         Me.lblStatPageP1FirstServePerc.Text = "0"
         Me.lblStatPageP1FirstServePerc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -251,12 +251,23 @@ Partial Class frmStat
         'lblStatPageP2FirstServePerc
         '
         Me.lblStatPageP2FirstServePerc.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblStatPageP2FirstServePerc.Location = New System.Drawing.Point(384, 146)
+        Me.lblStatPageP2FirstServePerc.Location = New System.Drawing.Point(381, 146)
         Me.lblStatPageP2FirstServePerc.Name = "lblStatPageP2FirstServePerc"
-        Me.lblStatPageP2FirstServePerc.Size = New System.Drawing.Size(244, 24)
+        Me.lblStatPageP2FirstServePerc.Size = New System.Drawing.Size(247, 24)
         Me.lblStatPageP2FirstServePerc.TabIndex = 16
         Me.lblStatPageP2FirstServePerc.Text = "0"
         Me.lblStatPageP2FirstServePerc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label9.Location = New System.Drawing.Point(245, 144)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(128, 26)
+        Me.Label9.TabIndex = 17
+        Me.Label9.Text = "First Serve %"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblStatPagePlayer1
         '
@@ -288,17 +299,6 @@ Partial Class frmStat
         Me.lblStatPagePlayer2.TabIndex = 3
         Me.lblStatPagePlayer2.Text = "Player 2"
         Me.lblStatPagePlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label9.Location = New System.Drawing.Point(247, 144)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(129, 26)
-        Me.Label9.TabIndex = 17
-        Me.Label9.Text = "First Serve %"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmStat
         '

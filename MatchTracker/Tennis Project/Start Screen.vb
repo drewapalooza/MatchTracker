@@ -1,4 +1,7 @@
-﻿Public Class Start_Screen
+﻿Option Explicit On
+Option Infer Off
+Option Strict On
+Public Class Start_Screen
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
@@ -100,7 +103,7 @@
     End Sub
 
     Private Sub Start_Screen_Load(sender As Object, e As EventArgs) Handles Me.Load
-        lstMaxGame.Text = 6
-        lstSetCount.Text = 5
+        lstMaxGame.Text = "6"
+        lstSetCount.Text = "5"
     End Sub
 End Class
